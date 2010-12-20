@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @reservation.name %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @reservation.lastname %>
+</p>
+
+<p>
+  <b>Rut:</b>
+  <%= @reservation.rut %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @reservation.phone %>
+</p>
+
+<p>
+  <b>Mail:</b>
+  <%= @reservation.mail %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @reservation.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @reservation.city %>
+</p>
+
+<p>
+  <b>Pais:</b>
+  <%= @reservation.pais_id %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @reservation.comment %>
+</p>
+
+<p>
+  <b>Type room:</b>
+  <%= @reservation.type_room_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apart</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag('jquery', 'jquery.tools.min', 'jquery.showcase-2.0.2.min') %>
+  <%= csrf_meta_tag %>
+
+
+  <script type="text/javascript">
+      $(function () { 
+          $("#showcase2").showcase();
+          $("#showcase").showcase({
+              images: [
+              { url: "images/1.jpg" },
+              { url: "images/2.jpg" },
+              { url: "images/3.jpg" }],
+              navigator: { showMiniature: true },
+              animation: { type: "fade" }
+          });
+      });
+  </script>
+
+<style type="text/css" media="screen">
+#slider1 {
+    width: 720px; /* important to be same as image width */
+    height: 300px; /* important to be same as image height */
+    position: relative; /* important */
+	overflow: hidden; /* important */
+}
+
+#slider1Content {
+    width: 720px; /* important to be same as image width or wider */
+    position: absolute;
+	top: 0;
+	margin-left: 0;
+}
+.slider1Image {
+    float: left;
+    position: relative;
+	display: none;
+}
+.slider1Image span {
+    position: absolute;
+	font: 10px/15px Arial, Helvetica, sans-serif;
+    padding: 10px 13px;
+    width: 694px;
+    background-color: #000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+    opacity: 0.7;
+    color: #fff;
+    display: none;
+}
+.clear {
+	clear: both;
+}
+.slider1Image span strong {
+    font-size: 14px;
+}
+.left {
+	top: 0;
+    left: 0;
+	width: 110px !important;
+	height: 280px;
+}
+.right {
+	right: 0;
+	bottom: 0;
+	width: 90px !important;
+	height: 290px;
+}
+ul { list-style-type: none;}
+</style>
+
+
+</head>
+<body>
+	
+<div id="head">
+
+	<div id="llamar">
+	    <span class="titulo">Reserva!</span><br>
+	    <div id="icon-fono"></div>
+	    <div id="num-texto">
+		   + 56 2 2339334
+		</div>
+		<div id="addres">
+		   Dirección: Av. 11 de septiembre 2170 esquina Ricardo Lyon  
+		</div>
+	</div>
+	 <div id="menuhoriz">  
+	   <ul>  
+	      <li><%= link_to 'INICIO', root_path %></li>  
+	      <li>APART HOTEL</li>  
+	      <li>DEPARTAMENTOS</li>
+		  <li><%= link_to 'SERVICIOS', servicios_path %></li>
+	      <li><%= link_to 'UBICACIÓN', ubicacion_path %></li>
+	      <li><%= link_to 'RESERVAS', reservas_path %></li>
+	      <li>OFERTAS</li>
+	      <li><%= link_to 'CONTACTO', contacto_path %></li>    
+	   </ul>  
+	 </div>
+	<div id="logo"></div>
+</div>
+
+<%= yield %>
+
+
+<div id="footer">
+   <div id="menu-footer">	
+	<div id="menuhoriz2">  
+	   <ul>  
+	      <li>Apart Hotel en Santiago</li>  
+	      <li>Apart Hotel en Antofagasta</li>  
+	      <li>Reserva de Apart Hotel en Santiago</li>
+		  <li>Reserva de Apart Hotel en Antofagasta</li>  
+	   </ul>  
+	 </div>
+	</div>
+</div>	
+</body>
+</html>

@@ -1,0 +1,138 @@
+<div id="showcase3">
+	<a><img src="images/home/1.jpg" /></a>
+    <a><img src="images/home/2.jpg" /></a>
+    <a><img src="images/home/3.jpg" /></a>
+    <a><img src="images/home/4.jpg" /></a>
+</div>
+<div id="reservas-online">
+  <div id="icon-reserva"><img src="/images/icon-reserva.png" rel="#reservation"></img></div>
+  <div id="text-reserva">
+  	<span class="titulo">Reserva Online</span><br>
+    Desde aquí podrás reservar online en cualquiera de nuestros Apart Hotel.
+  </div>	
+</div>
+<div id="puntos">
+  <div id="icon-map"></div>
+  <div id="text-punto">
+	<span class="titulo">Puntos de interés</span><br>
+	Descubre Santiago y sus entornos
+  </div>	
+</div>
+<div id="siguenos">
+  Siguenos en:
+  <div id="icons-ft">
+  	<div id="f"></div>
+	<div id="t"></div>
+  </div>
+
+<script>
+$(function() {
+		$("button[rel]").overlay({effect: 'apple'});
+});
+</script>
+<script>
+$(function() {
+	$("#triggers img[rel]").overlay({effect: 'apple'});
+});
+</script>
+
+
+<div class="overlay" id="reservation" style="display:none;position: absolute; top: 235.3px; left: 192.5px; display:none; z-index: 10000;">
+	<h1>Reserva </h1>
+	<p>Los campos marcados con asteriscos son obligatorios (*).</p>
+	<%= form_for(@reservation) do |f| %>
+	  <% if @reservation.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@reservation.errors.count, "error") %> prohibited this reservation from being saved:</h2>
+
+	      <ul>
+	      <% @reservation.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+	
+<div id="blok">	
+	  <div class="field">
+	    <%= f.label :type_room_id %><br />
+        <%= f.select ("type_room_id", @type_rooms.map {|u| [u.name,u.id]}) %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :arrived  %><br />
+	    <%= f.text_field :arrived, :type =>'date' %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :output %><br />
+	    <%= f.text_field :output, :type =>'date' %>
+	  </div>
+</div>	
+
+<div id="blok2">				
+	  <div class="field">
+	    <%= f.label :name %><br />
+	    <%= f.text_field :name %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :lastname %><br />
+	    <%= f.text_field :lastname %>
+	  </div>
+</div>
+<div id="blok2">	
+
+	  <div class="field">
+	    <%= f.label :rut %><br />
+	    <%= f.text_field :rut %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :phone %><br />
+	    <%= f.text_field :phone %>
+	  </div>
+</div>	
+
+
+<div id="blok2">	
+	  <div class="field">
+	    <%= f.label :mail %><br />
+	    <%= f.text_field :mail %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :address %><br />
+	    <%= f.text_field :address %>
+	  </div>
+</div>	
+
+<div id="blok2">
+	  <div class="field">
+	    <%= f.label :city %><br />
+	    <%= f.text_field :city %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :country_id %><br />
+        <%= f.select ("country_id", @countries.map {|u| [u.name,u.id]}) %>
+	  </div>
+</div>
+
+<div id="blok2">	
+	  <div class="field">
+	    <%= f.label :comment %><br />
+	    <%= f.text_area :comment %>
+	  </div>
+</div>
+
+<div id="blok3">		
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+</div>	
+	
+	<% end %>
+	<script>
+	$(":date").dateinput();
+	$("img[rel]").overlay();
+	</script>	
+	
+	
+</div>
+	
+</div>

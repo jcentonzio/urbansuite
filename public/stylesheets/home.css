@@ -1,0 +1,338 @@
+body{
+  background:url("/images/bg.jpg") repeat scroll 0 0 transparent;
+  font-family:Tahoma,trebuchet ms,arial,serif;
+  font-size:13px;
+  margin:20px 0 0;
+  padding:0;	
+  color:#333;
+}
+
+h1{
+ color:#C08A39;	
+}
+
+input{
+	-moz-border-radius:4px 4px 4px 4px;
+	border:1px solid #D2D2D2;
+	display:inline-block;
+	font-size:13px;
+	line-height:25px;
+	padding:0 0px;
+	vertical-align:top;	
+	height:25px;
+}
+
+select{
+	-moz-border-radius:4px 4px 4px 4px;
+	border:1px solid #D2D2D2;
+	display:inline-block;
+	font-size:13px;
+	line-height:25px;
+	padding:0 0px;
+	vertical-align:top;	
+	height:25px;
+	width:258px;	
+}
+
+textarea{
+	-moz-border-radius:4px 4px 4px 4px;
+	border:1px solid #D2D2D2;
+	display:inline-block;
+	font-size:13px;
+	line-height:20px;
+	padding:0 3px;
+	vertical-align:top;
+	height:200px;
+}
+
+#seccion{
+  width:100%;
+  float:left;
+  height:96px;
+  color:#fff;
+  margin:50px 0 0 0;
+  background:#000;	
+}
+
+#seccion-titulo{
+  width:900px;
+  margin:18px auto;	
+}
+
+span.titulo{
+  color:#C08A39;
+  font-size:16px;
+}
+
+span.titulo-seccion{
+  color:#C08A39;
+  font-size:30px;
+}
+
+#head{
+	width:900px;
+	margin:0 auto;
+	position:relative;
+}
+
+#llamar{
+  width:400px;
+  float:left;
+  margin:10px 0 0 0;	
+}
+
+#icon-fono{
+  width:32px;
+  height:32px;
+  background-image:url("/images/icon-fono.png");
+  float:left;	
+}
+
+#num-texto{
+  float:left;
+  font-size:16px;
+  margin:6px 0 0;	
+}
+
+#menuhoriz{
+  float:left;
+  margin:39px 0 0;
+  width:860px;
+}
+
+#menuhoriz ul li {  
+	display:inline;
+	margin:6px;
+	padding:6;
+}  
+#menuhoriz ul li:hover {   
+  cursor: pointer; /* cambiar el aspecto del puntero */  
+}  
+#menuhoriz ul {  
+  padding:0;
+}
+
+#logo{
+  background-image:url("/images/logo.png");
+  position:absolute;
+  right:10px;
+  top:30px;
+  width:214px;
+  height:166px;
+}
+
+#content{
+  width:900px;
+  margin:0 auto;	
+}
+
+#showcase3{
+  width:900px;
+  height:326px;
+  float:left;
+  margin:50px 0;
+  background-image:url("/images/bg-show.png"); 
+}
+
+
+#reservas-online{
+  width:300px;
+  float:left;	
+}
+
+#icon-reserva{
+  background-image:url("/images/icon-reserva.png");
+  width:79px;
+  height:73px;
+  float:left;
+  cursor:pointer;	
+}
+
+#text-reserva{
+  float:left;
+  width:185px;
+  margin:0 0 0 5px;
+}
+
+#puntos{
+  width:433px;
+  float:left;	
+}
+
+#icon-map{
+  background-image:url("/images/icon-map.png");
+  width:96px;
+  height:67px;
+  float:left;	
+}
+
+#text-punto{
+  float:left;	
+}
+
+#siguenos{
+  float:left;
+  width:167px;
+}
+
+#icons-ft{
+float:right;	
+}
+
+#f{
+  background-image:url("/images/icon-face.png");
+  width:32px;
+  height:32px;	
+  float:left;
+  margin:0 8px 0 0;
+}
+
+#t{
+  background-image:url("/images/icon-t.png");
+  width:32px;
+  height:32px;	
+  float:left;
+  	
+}
+
+#footer{
+  background:#000;
+  height:60px;
+  padding:30px 0 0;
+  text-align:center;
+  float:left;
+  width:100%;
+  margin:20px 0 0 0;		
+}
+
+
+#menuhoriz2{
+  margin:0px 0 0;
+  width:900px;
+}
+
+#menuhoriz2 ul li {  
+  display: inline;  
+  padding: 2px 2px; /*Separar el texto*/  
+  margin:5px; /* Separar los botones */  
+}  
+#menuhoriz2 ul li:hover {   
+  cursor: pointer; /* cambiar el aspecto del puntero */  
+}  
+#menuhoriz2 ul {  
+  padding:0;
+}
+
+#menu-footer{
+  width:900px;
+  margin:0 auto;
+  color:#C08A39;	
+}
+
+#content-seccion{
+	color:#333;
+	margin:0 auto;
+	width:975px;
+}
+
+#content-seccion2{
+    float:left;
+    width:975px;
+
+}
+
+#navi {
+	list-style-type:none;
+    margin:30px 0 0;
+    width:400px;
+    float:left;
+}
+
+#navi li{
+	padding:7px 0 0 0;
+	font-size:14px;
+}
+
+#addres{
+	float:left;
+	clear:both;
+}
+
+#showcase2{
+	float:right;
+	margin:40px 0 0 0;
+}
+
+#ubicacion{
+	width:892px;
+	height:439px;
+	margin:20px auto;
+}
+
+#reservation{
+	width:723px;
+	color:#ccc;
+}
+
+#blok{
+	width:100%;
+	margin:5px 0 0 5px;
+
+}
+
+
+
+div.field, div.actions {
+float:left;
+margin-bottom:10px;
+margin-right:10px;
+}
+
+div.field_c, div.actions {
+float:left;
+margin-bottom:10px;
+margin-right:10px;
+clear:both;
+}
+
+#blok2{
+	float:left;
+	margin:5px 0 0 5px;
+}
+
+#blok3{
+	float:left;
+	margin:5px 0 0 5px;
+	clear:both;
+}
+
+#reservation input{
+	width:195px;
+}
+
+#reservation textarea{
+   height:100px;
+}
+
+#reservation select{
+   width:200px;
+}
+
+
+#frm{
+	float:left;
+	background:#F6F6F6;
+	width:806px;
+	margin:20px 0 0 72px;
+	padding:10px;
+}
+
+#notice{
+	background: none repeat scroll 0 0 #C18A3A;
+	color: #FFFFFF;
+	float: left;
+	font-size: 16px;
+	height: 21px;
+	padding: 10px;
+	width: 644px;
+}

@@ -1,0 +1,61 @@
+"es-CL":
+  authlogic:
+    models:
+      user_session:
+    attributes:
+      user_session:
+        login: "Nombre de Usuario"
+        email: email
+        password: password
+        remember_me: remember me
+    error_messages:
+      login_blank: can not be blank
+      login_not_found: is not valid
+      login_invalid: "No es válido"
+      password_blank: can not be blank
+      password_invalid: is not valid
+  activerecord:
+    models:
+      reservation: "Reservación"
+      contact: "Contacto"
+    attributes:
+      reservation:
+        name: "Nombre *"
+        lastname: "Apellido *"
+        rut: "R.U.T"
+        phone: "Teléfono"
+        mail: "Correo *"
+        address: "Dirección"                          
+        city: "Ciudad"
+        country_id: "País"
+        comment: "Comentario"
+        type_room_id: "Tipo de Habitación *"
+        arrived: "Llegada *"
+        output: "Salida *"
+      contact:
+        name: "Nombre *"
+        lastname: "Apellido *"
+        phone: "Teléfono"
+        mail: "Correo *"                         
+        comment: "Consulta *"
+    
+    labels:
+      reservation:
+        name: "Nombre *"
+        lastname: "Apellido *"
+        rut: "R.U.T"
+        phone: "Teléfono"
+        mail: "Correo *"
+        address: "Dirección"                          
+        city: "Ciudad"
+        country_id: "País"
+        comment: "Comentario"
+        type_room_id: "Tipo de Habitación"
+        arrived: "Llegada *"
+        output: "Salida *"
+      contact:
+        name: "Nombre *"
+        lastname: "Apellido"
+        phone: "Teléfono *"
+        mail: "Correo *"                         
+        comment: "Comentario *"    

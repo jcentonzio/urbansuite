@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apart</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag('jquery','jquery.tools.min', 'jquery.showcase-2.0.2.min') %>
+  <%= csrf_meta_tag %>
+
+
+  <script type="text/javascript">
+      $(function () { 
+          $("#showcase3").showcase();
+         
+      });
+  </script>
+
+	<style>
+		/* some styling for triggers */
+		#triggers {
+			text-align:center;
+		}
+
+		#triggers img {
+			cursor:pointer;
+			margin:0 5px;
+			background-color:#fff;
+			border:1px solid #ccc;
+			padding:2px;
+
+			-moz-border-radius:4px;
+			-webkit-border-radius:4px;
+
+		}
+
+
+
+		/* styling for elements inside overlay */
+		.details {
+			position:absolute;
+			top:15px;
+			right:15px;
+			font-size:11px;
+			color:#fff;
+			width:150px;
+		}
+
+		.details h3 {
+			color:#aba;
+			font-size:15px;
+			margin:0 0 -10px 0;
+		}
+		</style>
+
+</head>
+<body>
+<div id="head">
+
+	<div id="llamar">
+	    <span class="titulo">Reserva!</span><br>
+	    <div id="icon-fono"></div>
+	    <div id="num-texto">+ 56 2 2339334</div>
+		<div id="addres">
+		   Dirección: Av. 11 de septiembre 2170 esquina Ricardo Lyon  
+		</div>
+	</div>
+	 <div id="menuhoriz">  
+	   <ul>  
+	      <li><%= link_to 'INICIO', root_path %></li>  
+	      <li>APART HOTEL</li>  
+	      <li>DEPARTAMENTOS</li>
+		  <li><%= link_to 'SERVICIOS', servicios_path %></li>
+	      <li><%= link_to 'UBICACIÓN', ubicacion_path %></li>
+	      <li><%= link_to 'RESERVAS', reservas_path %></li>
+	      <li>OFERTAS</li>
+	      <li><%= link_to 'CONTACTO', contacto_path %></li>    
+	   </ul>  
+	 </div>
+	<div id="logo"></div>
+	<% if !notice.nil? %>
+	<div id="notice"><%= notice %></div>
+	<% end %>
+</div>
+<div id="content">
+<%= yield %>
+</div>
+
+<div id="footer">
+   <div id="menu-footer">	
+	<div id="menuhoriz2">  
+	   <ul>  
+	      <li>Apart Hotel en Santiago</li>  
+	      <li>Apart Hotel en Antofagasta</li>  
+	      <li>Reserva de Apart Hotel en Santiago</li>
+		  <li>Reserva de Apart Hotel en Antofagasta</li>  
+	   </ul>  
+	 </div>
+	</div>
+</div>	
+</body>
+</html>
