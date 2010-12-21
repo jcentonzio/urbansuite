@@ -16,9 +16,16 @@ role :app, domain
 role :db,  domain
 
 namespace :deploy do
-   task :start do ; end
-   task :stop do ; end
-   task :restart, :roles => :app, :except => { :no_release => true } do
-     run "touch #{File.join(current_path,'tmp','restart.txt')}"
-   end
+  task :start do ; end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "touch #{File.join(current_path,'tmp','restart.txt')}"
+  end
+
+  task :symbolic_links do
+    run "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+  end
+   
 end
+
+after :deploy, 'deploy:symbolic_links'
