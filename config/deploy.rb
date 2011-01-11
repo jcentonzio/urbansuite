@@ -1,7 +1,7 @@
 require 'bundler/capistrano'
 
 set :application, 'urbansuite.cl'
-set :domain, '200.29.30.109'
+set :domain, 'urbansuite.test'
 set :user, 'goseo'
 set :deploy_to, "/home/goseo/public_html/#{application}"
 set :use_sudo, false
