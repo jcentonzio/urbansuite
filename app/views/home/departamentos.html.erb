@@ -1,0 +1,118 @@
+<div id="seccion">
+   <div id="seccion-titulo">
+	<span class="titulo-seccion">Departamentos</span><br>
+	Urban Suite ofrece a sus huéspedes modernos y elegantes departamentos de uno y dos dormitorios, con excelentes terminaciones, espacios de máxima comodidad y gran estilo.	
+	</div>	
+</div>
+
+<div id="content-seccion">
+	<div id="content-seccion2">
+	 
+	<div id="box-depa">
+		<div id="prew"><%= image_tag "/images/prew-1.jpg", :size => '180x121' %></div>
+		<div id="titulo">1 Dormitorios</div>
+		<div id="buttons">
+			<div id="m1"><a href="#"  rel="div.overlay:eq(0)">Hacer reserva</a></div>
+			<div id="m1">Ver video</div>
+			<div id="m1"><a href="#"  rel="div.overlay:eq(1)">Ver planta</a></div>
+		</div>
+		<div id="caracteristicas">
+		<span class="titulo2">Departamentos con capacidad para 3 personas:</span>
+		<ul class="caracteristicas">
+			<li>- Cocina completamente equipada</li>
+			<li>- Aire acondicionado y calefacción</li>
+			<li>- Conexión a Internet alta velocidad</li>
+			<li>- Secador de pelo, plancha y tabla de planchar.</li>
+			<li>- Equipo de música</li>
+			<li>- TV por cable</li>
+			<li>- Secador de pelo</li>
+			<li>- Caja de seguridad</li>
+			<li>- Refrigerador</li>	
+		</ul>
+		<div id="serv"></div>
+		</div>			
+	</div>
+	<div id="box-depa">
+		<div id="prew"><%= image_tag "/images/prew-2.jpg", :size => '180x121' %></div>
+		<div id="titulo">2 Dormitorios</div>
+		<div id="buttons">
+			<div id="m1">Hacer reserva</div>
+			<div id="m1">Ver video</div>
+			<div id="m1">Ver planta</div>
+		</div>
+		<div id="caracteristicas">
+		<span class="titulo2">Departamentos con capacidad para 5 personas:</span>
+		<ul class="caracteristicas">
+			<li>- Cocina completamente equipada</li>
+			<li>- Aire acondicionado y calefacción</li>
+			<li>- Conexión a Internet alta velocidad</li>
+			<li>- Secador de pelo, plancha y tabla de planchar.</li>
+			<li>- Equipo de música</li>
+			<li>- TV por cable</li>
+			<li>- Secador de pelo</li>
+			<li>- Caja de seguridad</li>
+			<li>- Refrigerador</li>	
+		</ul>
+		<div id="serv"></div>
+		</div>			
+	</div>
+    <div id="back-photo"></div>
+    <div id="back-photo"></div>
+    <div id="otros"><span style="color:#fff;font-size:16px">Servicios Adicionales:</span> Sala de eventos, piscina en azotea con vista panorámica, gimnasio equipado, lavandería </div>
+    </div>
+ </div>
+
+
+<div id="reservation" class="overlay" style="display:none">
+ <h2>Haz tu Reserva</h2>
+<div id="form-home">
+	<%= form_for(@reservation) do |f| %>
+	  <div class="field2">
+	    <%= f.label :name %><br />
+	    <%= f.text_field :name, :class => "home" %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :arrived  %><br />
+	    <%= f.text_field :arrived, :type =>'date' %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :output %><br />
+	    <%= f.text_field :output, :type =>'date' %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :number_pass %><br />
+	    <%= f.text_field :number_pass, :class => "number" %>
+	  </div>
+	 <div class="field3">
+		<%= f.label "Dormitorios" %><br />
+		<div id="button">
+	     <% TypeRoom.all.each do |type_room| %>
+	        <%= radio_button_tag type_room.id, type_room.name, :html => {:class =>"radio"} %> <%= type_room.name %>
+	     <% end %>
+	    </div>
+	 </div>
+	  <div class="field">
+	    <%= f.label :phone %><br />
+	    <%= f.text_field :phone, :class => "home" %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :mail %><br />
+	    <%= f.text_field :mail, :class => "home" %>
+	  </div>
+	  <div class="field">
+	    <%= f.submit 'Enviar', :class => 'button' %>
+	  </div>
+	<% end %>
+	<script>
+	$(":date").dateinput();
+	$("img[rel]").overlay();
+	</script>
+  </div>
+</div>
+
+<div id="plano" class="overlay" style="display:none">
+	 <h2>Planta departamento 1 dormitorio</h2>
+	<div id="img-plano">
+	<%= image_tag "/images/1dor.jpg" %>
+	</div>
+</div>	

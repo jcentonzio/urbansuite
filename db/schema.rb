@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101212193448) do
+ActiveRecord::Schema.define(:version => 20110121151327) do
 
   create_table "contacts", :force => true do |t|
     t.string   "name"
@@ -28,10 +28,6 @@ ActiveRecord::Schema.define(:version => 20101212193448) do
     t.datetime "updated_at"
   end
 
-  create_table "pai_pais", :primary_key => "PAI_PK", :force => true do |t|
-    t.string "PAI_NOMBRE", :limit => 80
-  end
-
   create_table "reservations", :force => true do |t|
     t.string   "name"
     t.string   "lastname"
@@ -40,13 +36,14 @@ ActiveRecord::Schema.define(:version => 20101212193448) do
     t.string   "mail"
     t.string   "address"
     t.string   "city"
-    t.integer  "pais_id"
     t.text     "comment"
     t.integer  "type_room_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.date     "arrived"
     t.date     "output"
+    t.integer  "country_id"
+    t.integer  "number_pass"
   end
 
   create_table "type_rooms", :force => true do |t|

@@ -1,47 +1,68 @@
 <div id="seccion">
    <div id="seccion-titulo">
 	<span class="titulo-seccion">Contacto</span><br>
-     Para contactarnos por favor complete los siguientes datos y le responderemos a la brevedad. 	
+	Responderemos a la brevedad cualquier detalle sobre los departamentos, tarifas, servicios y/o ubicación de apart hotel Urban Suite.  	
 	</div>	
 </div>
 
 <div id="content-seccion">
 	<div id="content-seccion2">
-      <div id="frm">
-		<%= form_for(@contact) do |f| %>
-		  <% if @contact.errors.any? %>
-		    <div id="error_explanation">
-		      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+	<div id="box-servicios">
+		<h2>Formulario de contacto </h2>
+		<p>Si desea reservar un departamento, haga su reserva aquí.</p>	
+		<div id="form-contacto">
+			<%= form_for(@contact) do |f| %>
+			  <% if @contact.errors.any? %>
+			    <div id="error_explanation">
+			      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
 
-		      <ul>
-		      <% @contact.errors.full_messages.each do |msg| %>
-		        <li><%= msg %></li>
-		      <% end %>
-		      </ul>
-		    </div>
-		  <% end %>
+			      <ul>
+			      <% @contact.errors.full_messages.each do |msg| %>
+			        <li><%= msg %></li>
+			      <% end %>
+			      </ul>
+			    </div>
+			  <% end %>
 
-		  <div class="field_c">
-		    <%= f.label :name %><br />
-		    <%= f.text_field :name %>
-		  </div>
-		  <div class="field_c">
-		    <%= f.label :lastname %><br />
-		    <%= f.text_field :lastname %>
-		  </div>
-		  <div class="field_c">
-		    <%= f.label :phone %><br />
-		    <%= f.text_field :phone %>
-		  </div>
-		  <div class="field_c">
-		    <%= f.label :comment %><br />
-		    <%= f.text_area :comment %>
-		  </div>
-		  <div class="actions">
-		    <%= f.submit %>
-		  </div>
-		<% end %>
-      </div>
+			  <div class="field_c">
+			    <%= f.label :name %><br />
+			    <%= f.text_field :name, :class => "home" %>
+			  </div>
+			  <div class="field_c">
+			    <%= f.label :phone %><br />
+			    <%= f.text_field :phone, :class => "home" %>
+			  </div>
+			  <div class="field_c">
+			    <%= f.label :mail %><br />
+			    <%= f.text_field :mail, :class => "home" %>
+			  </div>
+			  <div class="field_c">
+			    <%= f.label :comment %><br />
+			    <%= f.text_area :comment, :class => "home" %>
+			  </div>
+			  <div class="btn-contacto">
+			    <%= f.submit 'Enviar', :class => 'button' %>
+			  </div>
+			<% end %>
+			<div id="consultas-t">
+				Consultas Telefónicas<br>
+				Horario Oficina: 9:00 a 18:00<br>
+				(56 2) 7857140<br>
+				(56 2) 7614011<br>
+				Celular: (56 9) - 78977444
+			</div>
+			</div>
+    </div>
+    <div id="imagen-servicios">
+	<div id="imagenes">
+        <img src="images/servicios/1.jpg" />
+        <img src="images/servicios/2.jpg" />
+        <img src="images/servicios/3.jpg" />
+        <img src="images/servicios/4.jpg" />
+        <img src="images/servicios/5.jpg" />
+    </div>
+    </div>
+
 
     </div>
  </div>

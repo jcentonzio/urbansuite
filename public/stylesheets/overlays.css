@@ -38,13 +38,10 @@ width:35px;
 }
 
 div.overlay, #overlay {
-background-image:url("/images/white.png");
+background:#000;
 display:none;
-padding-bottom:20px;
-padding-left:20px;
-padding-right:20px;
-padding-top:20px;
-width:723px;
+padding:10px;
+width:448px;
 }
 
 /* the overlayed element */
@@ -59,7 +56,7 @@ width:723px;
 	/* styling */
 	background-color:#333;
 	
-	width:675px;	
+	width:448px;	
 	min-height:200px;
 	border:1px solid #666;
 	

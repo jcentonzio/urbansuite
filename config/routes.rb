@@ -9,7 +9,8 @@ Urbansuite::Application.routes.draw do
   get "home/servicios"
   get "home/ubicacion"
   get "home/reservas"
-  get "home/contacto"  
+  get "home/contacto"
+  get "home/departamentos"  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -23,7 +24,8 @@ Urbansuite::Application.routes.draw do
   match "/servicios" => "home#servicios", :as => :servicios
   match "/ubicacion" => "home#ubicacion", :as => :ubicacion
   match "/reservas" => "home#reservas", :as => :reservas
-  match "/contacto" => "home#contacto", :as => :contacto     
+  match "/contacto" => "home#contacto", :as => :contacto
+  match "/departamentos" => "home#departamentos", :as => :departamentos     
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

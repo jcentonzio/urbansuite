@@ -5,7 +5,13 @@ class HomeController < ApplicationController
     @reservation = Reservation.new
   end
   
+  def departamentos
+    @reservation = Reservation.new
+    render :layout => 'seccion'
+  end
+  
   def servicios
+    @reservation = Reservation.new
     render :layout => 'seccion'
   end
   

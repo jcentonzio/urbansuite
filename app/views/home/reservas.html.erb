@@ -1,31 +1,18 @@
 <div id="seccion">
    <div id="seccion-titulo">
 	<span class="titulo-seccion">Reserva</span><br>
-     Desde aquí podrás reservar online en cualquiera de nuestros Apart Hotel.  	
+     Haga su reserva a través del siguiente formulario y un ejecutivo se contactará con usted a la brevedad.  	
 	</div>	
 </div>
 
 <div id="content-seccion">
 	<div id="content-seccion2">
-      <div id="frm">
-			<p>Los campos marcados con asteriscos son obligatorios (*).</p>
+     	<div id="box-reserva">
+		<div id="form-home">
 			<%= form_for(@reservation) do |f| %>
-			  <% if @reservation.errors.any? %>
-			    <div id="error_explanation">
-			      <h2><%= pluralize(@reservation.errors.count, "error") %> prohibited this reservation from being saved:</h2>
-
-			      <ul>
-			      <% @reservation.errors.full_messages.each do |msg| %>
-			        <li><%= msg %></li>
-			      <% end %>
-			      </ul>
-			    </div>
-			  <% end %>
-
-		<div id="blok">	
-			  <div class="field">
-			    <%= f.label :type_room_id %><br />
-			    <%= f.select ("type_room_id", @type_rooms.map {|u| [u.name,u.id]}) %>
+			  <div class="field2">
+			    <%= f.label :name %><br />
+			    <%= f.text_field :name, :class => "home" %>
 			  </div>
 			  <div class="field">
 			    <%= f.label :arrived  %><br />
@@ -35,71 +22,55 @@
 			    <%= f.label :output %><br />
 			    <%= f.text_field :output, :type =>'date' %>
 			  </div>
-		</div>	
-
-		<div id="blok2">				
 			  <div class="field">
-			    <%= f.label :name %><br />
-			    <%= f.text_field :name %>
+			    <%= f.label :number_pass %><br />
+			    <%= f.text_field :number_pass, :class => "number" %>
 			  </div>
-			  <div class="field">
-			    <%= f.label :lastname %><br />
-			    <%= f.text_field :lastname %>
-			  </div>
-		</div>
-		<div id="blok2">	
-
-			  <div class="field">
-			    <%= f.label :rut %><br />
-			    <%= f.text_field :rut %>
-			  </div>
+			 <div class="field3">
+				<%= f.label "Dormitorios" %><br />
+				<div id="button">
+			     <% TypeRoom.all.each do |type_room| %>
+			        <%= radio_button_tag type_room.id, type_room.name, :html => {:class =>"radio"} %> <%= type_room.name %>
+			     <% end %>
+			    </div>
+			 </div>
 			  <div class="field">
 			    <%= f.label :phone %><br />
-			    <%= f.text_field :phone %>
+			    <%= f.text_field :phone, :class => "home" %>
 			  </div>
-		</div>	
-
-
-		<div id="blok2">	
 			  <div class="field">
 			    <%= f.label :mail %><br />
-			    <%= f.text_field :mail %>
+			    <%= f.text_field :mail, :class => "home" %>
 			  </div>
 			  <div class="field">
-			    <%= f.label :address %><br />
-			    <%= f.text_field :address %>
+			    <%= f.submit 'Enviar', :class => 'button' %>
 			  </div>
-		</div>	
-
-		<div id="blok2">
-			  <div class="field">
-			    <%= f.label :city %><br />
-			    <%= f.text_field :city %>
-			  </div>
-			  <div class="field">
-			    <%= f.label :country_id %><br />
-                <%= f.select ("country_id", @countries.map {|u| [u.name,u.id]}) %>
-			  </div>
-		</div>
-
-		<div id="blok2">	
-			  <div class="field">
-			    <%= f.label :comment %><br />
-			    <%= f.text_area :comment %>
-			  </div>
-		</div>
-
-		<div id="blok3">		
-			  <div class="actions">
-			    <%= f.submit %>
-			  </div>
-		</div>	
-
 			<% end %>
 			<script>
 			$(":date").dateinput();
+			$("img[rel]").overlay();
 			</script>
-     </div>
+		  </div>
+		<div id="consultas-r">
+	    	<span style="font-size:14px;">Consultas Telefónicas</span><br><br>
+
+			Horario Oficina: 9:00 a 18:00<br>
+
+			(56 2) 7857140<br>
+			(56 2) 7614011<br>
+			Celular: (56 9) - 78977444<br><br>
+			contacto@urbansuite.cl
+	    </div>
+		</div>
+		<div id="imagen-servicios">
+		<div id="imagenes">
+	        <img src="images/servicios/1.jpg" />
+	        <img src="images/servicios/2.jpg" />
+	        <img src="images/servicios/3.jpg" />
+	        <img src="images/servicios/4.jpg" />
+	        <img src="images/servicios/5.jpg" />
+	    </div>
+	    </div> 
 
     </div>
  </div>
