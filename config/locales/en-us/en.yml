@@ -1,0 +1,135 @@
+"en-us":
+  menu:
+    inicio: "HOME"
+    apart_hotel: "APART HOTEL"
+    departamentos: "DEPARTMENTS"
+    servicios: "SERVICES"
+    ubicacion: "LOCATION"
+    reservas: "RESERVATIONS"
+    contacto: "CONTACT"
+  titulos:
+    reserva: "Reservations"
+    departamentos: "Apartments"
+    1dormitorio: "1 Bedroom"
+    2dormitorios: "2 Bedrooms"
+    titulodepartamento1: "Apartments for 3 people"
+    titulodepartamento2: "Apartments for 5 people"
+    servicios_adicionales: "Free additional services: "
+    servicios: "Services"
+    ubicacion: "Location"
+    titulo_reserva: "Reservations"
+    consultas_telefonicas: "Questions"
+    contacto: "Contact"
+  caracteristicas:
+    cocina: "kitchen are fully furnished"
+    aire: "Air Conditioning and heating system"
+    internet: "High Speed Internet connection"
+    tabla: "Hair Dryer, iron and ironing table"
+    equipo: "Stereo player with adapter Ipod and Iphone"
+    tv: "Cable TV full HD"
+    caja: "Safe deposit box"
+    refigerador: "Refrigerator"
+  servicios:
+    salon_eventos: "Multi purpose room that can be adapted for events as celebrations, meetings etc."
+    piscina: "Rooftop pool with panoramic views of the city"
+    gym: "Gym equipped with weights and cardio room and Laundry room."
+    confortables: "Comfortable apartments with one or two bedrooms"
+    cama: "Bed King president"
+    aire: "Air Conditioner and heating system"
+    telefonia_internet: "Landline with unlimited local calls, Internet wi-fi with unlimited use"
+    tv: "LCD TV full HD with cable TV"
+    equipo: "Stereo player with adapter Ipod and Iphone" 
+    mucama: "Maid service from Monday to Saturday"
+    lavanderia: "Laundry service for bed linen and towels"
+    caja: "Safe deposit box digital"
+    estacionamiento: "Private parking"
+    secador: "Hair dryer"
+    cocina: "Full equipped kitchens"
+    taxi: "Accredited taxi service"
+    atencion: "Travel Place business assistance available from 9.00 hrs to 18.30 hrs"
+    atencion2: "24/7 Number for assistance in case of emergency"      
+  parrafos:
+    parrafo_home: "Focused on providing a destination where you just mind your business and leisure. Apart Hotel Urban Suite offers the best of their services:"
+    parrafo_departamentos: "Urban Suite offers guests modern and elegant apartments of one and two bedroom apartments with excellent finishes, spaces of comfort and style."
+    parrafo_servicios: "In Urban Suite we want your stay as comfortable as possible so we offer the following services:"
+    parrafo_ubicacion: "Urban Suites is Located in the heart of Providencia. With unique ITS walking distances to restaurants, pubs, shops as well as to banks, supermarkets, and business centers. The place is built on top of the Metro Station Lions What Makes easy to travel across the city fast and safe"
+    parrafo_reserva: "Make your reservation using the form below and an executive will contact you shortly."
+    parrafo_contacto: "We will answer, as soon as possible, any question about our apartments, fees, services and/or location of Urban Suites Apart Hotel."
+    parrafo_contacto2: "If you want to make a reservation, enter here."
+  textos:
+    ubicacion: "Location"
+    direccion: "Address"
+    reserva: "Reserve"
+    hacer_reserva: "To reserve"
+    ver_video: "Watch video"
+    ver_planta: "See plant"
+    reserva: "Reservations"
+    consultas: "Questions"
+    horarios: "Office Hours:"
+    celular: "Cell:"
+    fono: "Phone:"
+  frases:
+    conozca: "Learn about his privileged sector"             
+  authlogic:
+    models:
+      user_session:
+    attributes:
+      user_session:
+        login: "user"
+        email: email
+        password: password
+        remember_me: remember me
+    error_messages:
+      login_blank: can not be blank
+      login_not_found: is not valid
+      login_invalid: "No es válido"
+      password_blank: can not be blank
+      password_invalid: is not valid
+  activerecord:
+    models:
+      reservation: "Reservación"
+      contact: "contact"
+    attributes:
+      reservation:
+        name: "Name *"
+        lastname: "Last name *"
+        rut: "R.U.T"
+        phone: "Phone"
+        mail: "E-mail *"
+        address: "Address"                          
+        city: "City"
+        country_id: "Country"
+        comment: "Comment"
+        type_room_id: "Type room *"
+        arrived: "Arrived date *"
+        output: "Output date *"
+        number_pass: "Number of guests"
+        dormitorios: "Number of bedrooms"
+      contact:
+        name: "Name *"
+        lastname: "Last Name *"
+        phone: "Phone"
+        mail: "E-mail *"                         
+        comment: "Comment *"
+    
+    labels:
+      reservation:
+        name: "Name 2*"
+        lastname: "Last Name *"
+        rut: "R.U.T"
+        phone: "Phone"
+        mail: "E-mail *"
+        address: "Address"                          
+        city: "City"
+        country_id: "Country"
+        comment: "Comment"
+        type_room_id: "Type room"
+        arrived: "Arrived *"
+        output: "Output *"
+        number_pass: "Nº of passengers"
+      contact:
+        name: "Name *"
+        lastname: "Last Name"
+        phone: "Phone *"
+        mail: "E-mail *"                         
+        comment: "Comment *"       

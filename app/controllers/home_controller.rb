@@ -31,4 +31,9 @@ class HomeController < ApplicationController
     render :layout => 'seccion'
   end 
   
+  def reserva
+    @reservation = Reservation.new(params[:reservation])
+    @reservation.save
+  end
+  
 end

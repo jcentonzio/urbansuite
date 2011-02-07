@@ -24,7 +24,18 @@ h2{
  margin:5px 0 0 5px;	
 }
 
+#llamar span.titulo{
+	color:#C18A3A;
+}
+
 #reservation h2{
+ color:#C18A3A;
+ font-size:17px;
+ font-weight: normal;
+ margin:5px 0 0 5px;	
+}
+
+#reservation2 h2{
  color:#C18A3A;
  font-size:17px;
  font-weight: normal;
@@ -82,6 +93,15 @@ input.button{
     background:#C18A3A;
     border:0;
 }
+
+#reservation2 input.button{
+	width:66px;
+	height:22px;
+    color:#000;
+    background:#C18A3A;
+    border:0;
+}
+
 
 div.field3 label{
     margin:0 0 20px 0;
@@ -245,7 +265,7 @@ float:right;
 
 #menuhoriz2{
     float: left;
-    margin: 71px 0 0;
+    margin: 84px 0 0;
     width: 787px;
 }
 
@@ -282,10 +302,11 @@ float:right;
 }
 
 #navi {
-	list-style-type:none;
-    margin:12px 0 0;
-    width:400px;
-    float:left;
+    float: left;
+    list-style-type: none;
+    margin: 12px 0 0;
+    padding-left: 8px;
+    width: 434px;
 }
 
 #navi li{
@@ -314,6 +335,11 @@ float:right;
 	color:#ccc;
 }
 
+#reservation2{
+	width:448px;
+	color:#ccc;
+}
+
 #blok{
 	width:100%;
 	margin:5px 0 0 5px;
@@ -336,7 +362,7 @@ clear:both;
 
 div.field3, div.actions {
 float: left;
-margin:0 0 0 121px;
+margin:0 0 0 96px;
 }
 
 div.field_c, div.actions {
@@ -443,7 +469,7 @@ clear:both;
 #box-depa{
     background-image: url("/images/box-depa.png");
     float: left;
-    height: 384px;
+    height: 380px;
     margin: 10px 2px 0 0;
     position: relative;
     width: 445px;
@@ -487,7 +513,7 @@ ul.caracteristicas{
 
 #back-photo{
 	width:445px;
-    height:66px;
+    height:70px;
     background:#333;
     float:left;
     margin: 2px 2px 2px 0
@@ -630,4 +656,15 @@ div.btn-contacto{
     margin: 57px 0 17px 5px;
     padding: 5px;
     width: 428px;
+}
+
+#thumb{
+    float: left;
+    margin: 3px 2px 0 1px;
+}
+
+#thumb a img{
+	padding:0;
+	margin:0;
+	border:0;
 }

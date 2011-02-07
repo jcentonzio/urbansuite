@@ -1,15 +1,14 @@
 <div id="seccion">
    <div id="seccion-titulo">
-	<span class="titulo-seccion">Contacto</span><br>
-	Responderemos a la brevedad cualquier detalle sobre los departamentos, tarifas, servicios y/o ubicación de apart hotel Urban Suite.  	
+	<span class="titulo-seccion"><%= t 'titulos.contacto' %></span><br>
+     <%= t 'parrafos.parrafo_contacto' %>  	
 	</div>	
 </div>
 
 <div id="content-seccion">
 	<div id="content-seccion2">
 	<div id="box-servicios">
-		<h2>Formulario de contacto </h2>
-		<p>Si desea reservar un departamento, haga su reserva aquí.</p>	
+		<p><%= t 'parrafos.parrafo_contacto2' %> </p>	
 		<div id="form-contacto">
 			<%= form_for(@contact) do |f| %>
 			  <% if @contact.errors.any? %>
@@ -45,11 +44,10 @@
 			  </div>
 			<% end %>
 			<div id="consultas-t">
-				Consultas Telefónicas<br>
-				Horario Oficina: 9:00 a 18:00<br>
-				(56 2) 7857140<br>
-				(56 2) 7614011<br>
-				Celular: (56 9) - 78977444
+				<%= t 'titulos.consultas_telefonicas' %>:<br>
+				<%= t 'textos.horarios' %> 9:00 a 18:00<br>
+				<%= t 'textos.fono' %> (56 2) 9357625 <br>
+				<%= t 'textos.celular' %> (56 9) - 78977444
 			</div>
 			</div>
     </div>

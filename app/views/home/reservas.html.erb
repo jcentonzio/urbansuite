@@ -1,7 +1,7 @@
 <div id="seccion">
    <div id="seccion-titulo">
-	<span class="titulo-seccion">Reserva</span><br>
-     Haga su reserva a través del siguiente formulario y un ejecutivo se contactará con usted a la brevedad.  	
+	<span class="titulo-seccion"><%= t 'titulos.titulo_reserva' %></span><br>
+     <%= t 'parrafos.parrafo_reserva' %> 	
 	</div>	
 </div>
 
@@ -27,7 +27,7 @@
 			    <%= f.text_field :number_pass, :class => "number" %>
 			  </div>
 			 <div class="field3">
-				<%= f.label "Dormitorios" %><br />
+				<%= f.label :dormitorios %><br />
 				<div id="button">
 			     <% TypeRoom.all.each do |type_room| %>
 			        <%= radio_button_tag type_room.id, type_room.name, :html => {:class =>"radio"} %> <%= type_room.name %>
@@ -52,13 +52,11 @@
 			</script>
 		  </div>
 		<div id="consultas-r">
-	    	<span style="font-size:14px;">Consultas Telefónicas</span><br><br>
+	    	<span style="font-size:14px;"><%= t 'titulos.consultas_telefonicas' %>:</span><br><br>
 
-			Horario Oficina: 9:00 a 18:00<br>
-
-			(56 2) 7857140<br>
-			(56 2) 7614011<br>
-			Celular: (56 9) - 78977444<br><br>
+			<%= t 'textos.horarios' %> 9:00 a 18:00<br>
+            <%= t 'textos.fono' %> (56 2) 9357625 <br>
+			<%= t 'textos.celular' %> (56 9) - 78977444<br><br>
 			contacto@urbansuite.cl
 	    </div>
 		</div>

@@ -1,5 +1,63 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
-en:
-  hello: "Hello world"
+"es-CL":
+  authlogic:
+    models:
+      user_session:
+    attributes:
+      user_session:
+        login: "user"
+        email: email
+        password: password
+        remember_me: remember me
+    error_messages:
+      login_blank: can not be blank
+      login_not_found: is not valid
+      login_invalid: "No es válido"
+      password_blank: can not be blank
+      password_invalid: is not valid
+  activerecord:
+    models:
+      reservation: "Reservación"
+      contact: "contact"
+    attributes:
+      reservation:
+        name: "Name *"
+        lastname: "Last name *"
+        rut: "R.U.T"
+        phone: "Phone"
+        mail: "E-mail *"
+        address: "Address"                          
+        city: "City"
+        country_id: "Country"
+        comment: "Comment"
+        type_room_id: "Type room *"
+        arrived: "Arrived *"
+        output: "Output *"
+        number_pass: "Number of passengers"
+      contact:
+        name: "Name *"
+        lastname: "Last Name *"
+        phone: "Phone"
+        mail: "E-mail *"                         
+        comment: "Comment *"
+    
+    labels:
+      reservation:
+        name: "Name *"
+        lastname: "Last Name *"
+        rut: "R.U.T"
+        phone: "Phone"
+        mail: "E-mail *"
+        address: "Address"                          
+        city: "City"
+        country_id: "Country"
+        comment: "Comment"
+        type_room_id: "Type room"
+        arrived: "Arrived *"
+        output: "Output *"
+        number_pass: "Number of passengers"
+      contact:
+        name: "Name *"
+        lastname: "Last Name"
+        phone: "Phone *"
+        mail: "E-mail *"                         
+        comment: "Comment *"
