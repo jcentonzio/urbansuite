@@ -50,7 +50,7 @@ class ReservationsController < ApplicationController
         format.html { redirect_to(root_url, :notice => 'Gracias por enviar su solicitud, un ejecutivo se comunicará con usted a la brevedad.') }
         format.xml  { render :xml => @reservation, :status => :created, :location => @reservation }
       else
-        format.html { render :action => "new" }
+        redirect_to(root_url)
         format.xml  { render :xml => @reservation.errors, :status => :unprocessable_entity }
       end
     end

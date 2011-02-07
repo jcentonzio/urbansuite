@@ -9,14 +9,18 @@
 	<div id="content-seccion2">
      	<div id="box-reserva">
 		<div id="form-home">
-			<%= form_for(@reservation) do |f| %>
-			  <div class="field2">
+			<% form_for @reservation, :remote => true, :url => { :action => :reserva } do |f| %>
+			  <div class="field">
 			    <%= f.label :name %><br />
-			    <%= f.text_field :name, :class => "home" %>
+			    <%= f.text_field :name, :class => 'home' %>
+			  </div>
+			  <div class="field">
+			    <%= f.label :lastname %><br />
+			    <%= f.text_field :lastname, :class => 'home' %>
 			  </div>
 			  <div class="field">
 			    <%= f.label :arrived  %><br />
-			    <%= f.text_field :arrived, :type =>'date' %>
+			    <%= f.text_field :output, :type =>'date' %>
 			  </div>
 			  <div class="field">
 			    <%= f.label :output %><br />
@@ -30,7 +34,7 @@
 				<%= f.label :dormitorios %><br />
 				<div id="button">
 			     <% TypeRoom.all.each do |type_room| %>
-			        <%= radio_button_tag type_room.id, type_room.name, :html => {:class =>"radio"} %> <%= type_room.name %>
+			        <%= radio_button_tag "reservation[type_room_id]", type_room.id, :html => {:class =>"radio"} %> <%= type_room.name %>
 			     <% end %>
 			    </div>
 			 </div>
@@ -40,7 +44,7 @@
 			  </div>
 			  <div class="field">
 			    <%= f.label :mail %><br />
-			    <%= f.text_field :mail, :class => "home" %>
+			    <%= f.text_field :mail, :class => "home"  %>
 			  </div>
 			  <div class="field">
 			    <%= f.submit 'Enviar', :class => 'button' %>
@@ -48,7 +52,6 @@
 			<% end %>
 			<script>
 			$(":date").dateinput();
-			$("img[rel]").overlay();
 			</script>
 		  </div>
 		<div id="consultas-r">

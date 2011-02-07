@@ -8,6 +8,10 @@ body{
   color:#333;
 }
 
+a img{
+  border:0;
+}
+
 a:link {text-decoration: none;color:#000;}
 a:visited {text-decoration: none;color:#000;}
 a:active {text-decoration: none;color: red;}
@@ -349,8 +353,25 @@ float:right;
 
 div.field, div.actions {
 float:left;
-margin-bottom:5px;
-margin-right:10px;
+margin:0 10px 5px 0;
+}
+
+div.field_with_errors, div.actions{
+	float:left;
+	margin:0;
+}
+
+
+div.field_with_errors input.home {	
+border:solid 1px red	
+}
+
+div.field_with_errors input.number{	
+border:solid 1px red	
+}
+
+div.field_with_errors input.date{	
+border:solid 1px red	
 }
 
 div.field2, div.actions {
@@ -408,6 +429,7 @@ clear:both;
 	float:left;
 	background:url("/images/fdo-box.png");
 	margin:0 2px 0 0;
+	position:relative;
 }
 
 #box2{
@@ -426,6 +448,7 @@ clear:both;
     height: 440px;
     margin: 10px 2px 0 0;
     width: 448px;
+    position:relative;
 }
 
 #parrafo{
@@ -667,4 +690,14 @@ div.btn-contacto{
 	padding:0;
 	margin:0;
 	border:0;
+}
+
+#mensaje-error{
+	position:absolute;
+	top:5px;
+	right:10px;
+	color:#000;
+	font-size:13px;
+	padding:5px;
+	background:#FFFE36;
 }

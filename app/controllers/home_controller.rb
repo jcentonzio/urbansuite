@@ -33,7 +33,7 @@ class HomeController < ApplicationController
   
   def reserva
     @reservation = Reservation.new(params[:reservation])
-    @reservation.save
+    @reservation.save     
   end
   
 end
