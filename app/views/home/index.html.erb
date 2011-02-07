@@ -10,48 +10,7 @@
 
 <div id="box">
  <h2><%= t 'titulos.reserva' %></h2>
-<div id="form-home">
-	<% form_for @reservation, :remote => true, :url => { :action => :reserva } do |f| %>
-	  <div class="field2">
-	    <%= f.label :name %><br />
-	    <%= f.text_field :name, :class => "home", :required => "required" %>
-	  </div>
-	  <div class="field">
-	    <%= f.label :arrived  %><br />
-	    <%= f.text_field :arrived, :type =>'date', :required => "required" %>
-	  </div>
-	  <div class="field">
-	    <%= f.label :output %><br />
-	    <%= f.text_field :output, :type =>'date', :required => "required" %>
-	  </div>
-	  <div class="field">
-	    <%= f.label :number_pass %><br />
-	    <%= f.text_field :number_pass, :class => "number", :required => "required" %>
-	  </div>
-	 <div class="field3">
-		<%= f.label :dormitorios %><br />
-		<div id="button">
-	     <% TypeRoom.all.each do |type_room| %>
-	        <%= radio_button_tag "reservation[type_room_id]", type_room.id, :required => "required", :html => {:class =>"radio"} %> <%= type_room.name %>
-	     <% end %>
-	    </div>
-	 </div>
-	  <div class="field">
-	    <%= f.label :phone %><br />
-	    <%= f.text_field :phone, :class => "home", :required => "required" %>
-	  </div>
-	  <div class="field">
-	    <%= f.label :mail %><br />
-	    <%= f.text_field :mail, :class => "home", :required => "required" %>
-	  </div>
-	  <div class="field">
-	    <%= f.submit 'Enviar', :class => 'button' %>
-	  </div>
-	<% end %>
-	<script>
-	$(":date").dateinput();
-	</script>
-  </div>
+
 </div>
 
 <script>
