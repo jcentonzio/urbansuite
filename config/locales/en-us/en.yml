@@ -55,7 +55,7 @@
     parrafo_ubicacion: "Urban Suites is Located in the heart of Providencia. With unique ITS walking distances to restaurants, pubs, shops as well as to banks, supermarkets, and business centers. The place is built on top of the Metro Station Lions What Makes easy to travel across the city fast and safe"
     parrafo_reserva: "Make your reservation using the form below and an executive will contact you shortly."
     parrafo_contacto: "We will answer, as soon as possible, any question about our apartments, fees, services and/or location of Urban Suites Apart Hotel."
-    parrafo_contacto2: "If you want to make a reservation, enter here."
+    parrafo_contacto2: "If you want to make a reservation"
   textos:
     ubicacion: "Location"
     direccion: "Address"
@@ -68,6 +68,7 @@
     horarios: "Office Hours:"
     celular: "Cell:"
     fono: "Phone:"
+    aqui: "here"
   frases:
     conozca: "Learn about his privileged sector"             
   authlogic:

@@ -4,4 +4,5 @@ gem 'rails', '3.0.1'
 gem 'mysql', '2.8.1'
 gem 'jquery-rails'
 gem "mongrel"
+gem "mail", "2.2.5"
 

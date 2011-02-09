@@ -47,6 +47,9 @@ $(":date").dateinput();
 
 <% else %>
 
-Gracias por su reserva 
+<div id="mensaje-reserva">Estimado <strong><%= @reservation.name %></strong> gracias por hacer tu reserva.<br> <br>
+Un ejecutivo se contactará con usted a la brevedad.<br><br>
+Una copia con el detalle de la reserva fue enviado a <strong><%= @reservation.mail %></strong><br><br>
+</div>
 
 <% end %>

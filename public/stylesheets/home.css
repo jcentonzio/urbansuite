@@ -170,7 +170,7 @@ span.titulo-seccion{
 #menuhoriz ul li {  
     border-right: 1px solid #333333;
     display: inline;
-    font-size: 9px;
+    font-size: 8px;
     font-weight: bold;
     margin: 6px;
     padding-right: 26px;
@@ -700,4 +700,12 @@ div.btn-contacto{
 	font-size:13px;
 	padding:5px;
 	background:#FFFE36;
+}
+
+#mensaje-reserva{
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    margin: 39px 0 0;
+    padding: 5px;
+    text-align: center;	
 }

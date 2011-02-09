@@ -8,7 +8,7 @@
 <div id="content-seccion">
 	<div id="content-seccion2">
 	<div id="box-servicios">
-		<p><%= t 'parrafos.parrafo_contacto2' %> </p>	
+		<p><%= t 'parrafos.parrafo_contacto2' %> <a href="/reservas"><%= t 'textos.aqui' %></a> </p>	
 		<div id="form-contacto">
 			<%= form_for(@contact) do |f| %>
 			  <% if @contact.errors.any? %>

@@ -33,7 +33,9 @@ class HomeController < ApplicationController
   
   def reserva
     @reservation = Reservation.new(params[:reservation])
-    @reservation.save     
+    if @reservation.save
+      Notifier.deliver_reserva(@reservation)
+    end    
   end
   
 end

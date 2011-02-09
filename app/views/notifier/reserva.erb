@@ -1,0 +1,192 @@
+
+<p>Estimado <strong><%= @reservation.name %> <%= @reservation.lastname %></strong> gracias por hacer su reserva en Urban Suites. </p>
+<p>Un ejecutivo se contactar&aacute; con usted a la brevedad.</p>
+<p><strong>Detalle de su reserva:</strong></p>
+<table class=LightGrid-Accent11 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:-moz-bg-solid none;mso-border-alt:solid #4F81BD;
+ mso-border-themecolor:accent1;mso-border-alt:1.0pt;mso-yfti-tbllook:1184;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:1.0pt solid #4F81BD;
+ mso-border-insideh-themecolor:accent1;mso-border-insidev:1.0pt solid #4F81BD;
+ mso-border-insidev-themecolor:accent1'>
+ <tr style='mso-yfti-irow:2'>
+  <td width=109 valign=top style='width:108.95pt;border:solid #4F81BD;
+  mso-border-themecolor:accent1;border:1.0pt;border-top:none;mso-border-top-alt:
+  solid #4F81BD;mso-border-top-themecolor:accent1;mso-border-top-alt:1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:68'><b><span style='font-size:11.0pt;
+  font-family:Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:
+  "Times New Roman";mso-fareast-theme-font:major-fareast;mso-hansi-theme-font:
+  major-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
+  mso-fareast-language:ES-TRAD'>Llegada:<o:p></o:p></span></b></p>  </td>
+  <td width=109 valign=top style='width:108.95pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><%= @reservation.arrived.strftime("%d-%m-%Y") %><o:p></o:p></span></p>  </td>
+  <td width=109 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:11.0pt;mso-fareast-language:ES-TRAD'>Salida:<o:p></o:p></span></b></p>  </td>
+  <td width=109 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><%= @reservation.output.strftime("%d-%m-%Y") %><o:p></o:p></span></p>  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=109 valign=top style='width:108.95pt;border:solid #4F81BD;
+  mso-border-themecolor:accent1;border:1.0pt;border-top:none;mso-border-top-alt:
+  solid #4F81BD;mso-border-top-themecolor:accent1;mso-border-top-alt:1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:132'><b><span style='font-size:11.0pt;
+  font-family:Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:
+  "Times New Roman";mso-fareast-theme-font:major-fareast;mso-hansi-theme-font:
+  major-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
+  mso-fareast-language:ES-TRAD'><o:p>&nbsp;</o:p></span></b></p>  </td>
+  <td width=109 valign=top style='width:108.95pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><o:p>&nbsp;</o:p></span></p>  </td>
+  <td width=109 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><o:p>&nbsp;</o:p></span></p>  </td>
+  <td width=109 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><o:p>&nbsp;</o:p></span></p>  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=109 valign=top style='width:108.95pt;border:solid #4F81BD;
+  mso-border-themecolor:accent1;border:1.0pt;border-top:none;mso-border-top-alt:
+  solid #4F81BD;mso-border-top-themecolor:accent1;mso-border-top-alt:1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:68'><b><span style='font-size:11.0pt;
+  font-family:Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:
+  "Times New Roman";mso-fareast-theme-font:major-fareast;mso-hansi-theme-font:
+  major-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
+  mso-fareast-language:ES-TRAD'>Numero personas:<o:p></o:p></span></b></p>  </td>
+  <td width=109 valign=top style='width:108.95pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><%= @reservation.number_pass %><o:p></o:p></span></p>  </td>
+  <td width=109 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:11.0pt;mso-fareast-language:ES-TRAD'>Tipo de apartamento:<o:p></o:p></span></b></p>  </td>
+  <td width=109 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><%= @reservation.type_room.name %><o:p></o:p></span></p>  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=109 valign=top style='width:108.95pt;border:solid #4F81BD;
+  mso-border-themecolor:accent1;border:1.0pt;border-top:none;mso-border-top-alt:
+  solid #4F81BD;mso-border-top-themecolor:accent1;mso-border-top-alt:1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:132'><b><span style='font-size:11.0pt;
+  font-family:Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:
+  "Times New Roman";mso-fareast-theme-font:major-fareast;mso-hansi-theme-font:
+  major-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
+  mso-fareast-language:ES-TRAD'><o:p>&nbsp;</o:p></span></b></p>  </td>
+  <td width=109 valign=top style='width:108.95pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><o:p>&nbsp;</o:p></span></p>  </td>
+  <td width=109 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><o:p>&nbsp;</o:p></span></p>  </td>
+  <td width=109 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><o:p>&nbsp;</o:p></span></p>  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=109 valign=top style='width:108.95pt;border:solid #4F81BD;
+  mso-border-themecolor:accent1;border:1.0pt;border-top:none;mso-border-top-alt:
+  solid #4F81BD;mso-border-top-themecolor:accent1;mso-border-top-alt:1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:68'><b><span style='font-size:11.0pt;
+  font-family:Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:
+  "Times New Roman";mso-fareast-theme-font:major-fareast;mso-hansi-theme-font:
+  major-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
+  mso-fareast-language:ES-TRAD'>Teléfono:<o:p></o:p></span></b></p>  </td>
+  <td width=109 valign=top style='width:108.95pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><%= @reservation.phone %><o:p></o:p></span></p>  </td>
+  <td width=109 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:11.0pt;mso-fareast-language:ES-TRAD'>Email:<o:p></o:p></span></b></p>  </td>
+  <td width=109 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD;mso-border-bottom-themecolor:accent1;
+  border-bottom:1.0pt;border-right:solid #4F81BD;mso-border-right-themecolor:
+  accent1;border-right:1.0pt;mso-border-top-alt:solid #4F81BD;mso-border-top-themecolor:
+  accent1;mso-border-top-alt:1.0pt;mso-border-left-alt:solid #4F81BD;
+  mso-border-left-themecolor:accent1;mso-border-left-alt:1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:11.0pt;
+  mso-fareast-language:ES-TRAD'><%= @reservation.mail %><o:p></o:p></span></p>  </td>
+ </tr>
+</table>
+<p>&nbsp;</p>
+<p><strong>Cordiales Saludos</strong><br />
+  Apart Hotel Urban Suites<br />
+  Av. 11 de septiembre 2170 Of. 805<br />
+  Tel: (56-2) 9357625<br />
+  <a href="http://www.urbansuites.cl">www.urbansuites.cl</a></p>
