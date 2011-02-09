@@ -1,12 +1,12 @@
 class Notifier < ActionMailer::Base
   default_url_options[:host] = "www.urbansuites.cl"
-  default :from => "aparturbansuite@gmail.com"
+  default :from => "Apart Hotel Urban Suites"
     
   def reserva(reserva)
     @reservation = reserva
     @recipient = reserva.mail
     attachments["logo.png"] = File.read("#{Rails.root}/public/images/logo.png")
-    mail(:to =>"Reserva <jcentonzio@gmail.com>", :cc => "#{reserva.name} <#{reserva.mail}>", :subject => "Reserva desde el sitio web")
+    mail(:to =>"<reservasurbansuite@gmail.com>", :cc => "#{reserva.name} <#{reserva.mail}>", :subject => "Reserva desde el sitio web")
   end
   
    
