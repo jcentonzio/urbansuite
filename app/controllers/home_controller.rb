@@ -38,4 +38,11 @@ class HomeController < ApplicationController
     end    
   end
   
+  def contact
+    @contact = Contact.new(params[:contact])
+    if @contact.save
+      Notifier.deliver_contacto(@contact)
+    end
+  end  
+  
 end

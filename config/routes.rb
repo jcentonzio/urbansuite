@@ -8,6 +8,7 @@ Urbansuite::Application.routes.draw do
   resources :home do
     member do
       post :reserva
+      post :contact
     end
   end
 
@@ -32,7 +33,8 @@ Urbansuite::Application.routes.draw do
   match "/reservas" => "home#reservas", :as => :reservas
   match "/contacto" => "home#contacto", :as => :contacto
   match "/departamentos" => "home#departamentos", :as => :departamentos
-  match "reserva/" => "home#reserva", :as => "reserva"     
+  match "reserva/" => "home#reserva", :as => "reserva" 
+  match "contact/" => "home#contact", :as => "contact"     
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

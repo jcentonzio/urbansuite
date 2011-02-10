@@ -1,0 +1,34 @@
+<% if @contact.errors.any? %>
+<div id="mensaje-error">Por favor completa los campos marcados</div>
+<p><%= t 'parrafos.parrafo_contacto2' %> <a href="/reservas"><%= t 'textos.aqui' %></a> </p>	
+<div id="form-contacto">
+<% form_for @contact, :remote => true, :url => { :action => :contact } do |f| %>
+ <div class="field_c">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :class => "home" %>
+  </div>
+  <div class="field_c">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone, :class => "home" %>
+  </div>
+  <div class="field_c">
+    <%= f.label :mail %><br />
+    <%= f.text_field :mail, :class => "home" %>
+  </div>
+  <div class="field_c">
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment, :class => "home" %>
+  </div>
+  <div class="btn-contacto">
+    <%= f.submit 'Enviar', :class => 'button' %>
+  </div>
+<% end %>
+</div>
+
+<% else %>
+
+<div id="mensaje-reserva">Estimado <strong><%= @contact.name %></strong> gracias por contactarse con Urban Suites<br> <br>
+Un ejecutivo se contactará con usted a la brevedad.<br><br>
+</div>
+
+<% end %>

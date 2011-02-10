@@ -16,6 +16,10 @@ $(document).ready(function() {
   $("#new_reservation").submitWithAjax();
 })
 
+$(document).ready(function() {
+  $("#new_contact").submitWithAjax();
+})
+
 jQuery(function($) {
 // create a convenient toggleLoading function
   var toggleLoading = function() { $("#loading-recommend").toggle() };

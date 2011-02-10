@@ -5,8 +5,13 @@ class Notifier < ActionMailer::Base
   def reserva(reserva)
     @reservation = reserva
     @recipient = reserva.mail
-    attachments["logo.png"] = File.read("#{Rails.root}/public/images/logo.png")
     mail(:to =>"<reservasurbansuite@gmail.com>", :cc => "#{reserva.name} <#{reserva.mail}>", :subject => "Reserva desde el sitio web")
+  end
+  
+  def contacto(contact)
+    @contacto = contact
+    @recipient = contact.mail
+    mail(:to =>"<reservasurbansuite@gmail.com>", :subject => "Contacto desde el sitio web")
   end
   
    
