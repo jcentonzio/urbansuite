@@ -34,6 +34,7 @@ class HomeController < ApplicationController
   
   def reserva
     @reservation = Reservation.new(params[:reservation])
+    @locale = params[:locale]
     if @reservation.save
       Notifier.deliver_reserva(@reservation)
     end    

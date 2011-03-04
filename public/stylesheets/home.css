@@ -542,6 +542,7 @@ ul.caracteristicas li{
     line-height: 23px;
     font-family: arial;
 	font-style:normal;
+	list-style-type:none;
 }
 
 #serv{

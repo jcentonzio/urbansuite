@@ -11,7 +11,7 @@
 <div id="box">
  <h2><%= t 'titulos.reserva' %></h2>
 <div id="form-home">
-	<% form_for @reservation, :url => { :action => :reserva } do |f| %>
+	<% form_for @reservation, :url => { :action => "reserva" } do |f| %>
 	  <div class="field">
 	    <%= f.label :name %><br />
 	    <%= f.text_field :name, :class => 'home' %>
