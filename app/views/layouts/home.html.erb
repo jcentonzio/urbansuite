@@ -21,21 +21,22 @@ Shadowbox.init();
 </script>
 
 </head>
+
+
 <body>
 <div id="head">
-	<div id="llamar">
-	    <span class="titulo"><%= t 'textos.reserva' %>!</span> <a href="es"><%= image_tag "/images/spanish.png" %></a>
-	 <a href="en"><%= image_tag "/images/english.png" %></a> <br>
+	<div id="llamar">		
+	    <span class="titulo"><%= t 'textos.reserva' %>!</span> <a href="/es"><%= image_tag "/images/spanish.png" %></a>
+	 <a href="/en"><%= image_tag "/images/english.png" %></a> <br>
 	    <div id="icon-fono"></div>
-	    <div id="num-texto">+ 56 2 9357625 </div>
+	    <div id="num-texto"> +56 2 935 7625 </div>
 		<div id="addres">
 		   <%= t 'textos.direccion' %>: Av. 11 de septiembre 2170 esquina Ricardo Lyon  
 		</div>
 	</div>
 	 <div id="menuhoriz">  
 	   <ul>  
-	      <li><%= link_to "#{t 'menu.inicio'}", root_path %></li>  
-	      <li><%= t 'menu.apart_hotel' %></li>  
+	      <li><%= link_to "#{t 'menu.inicio'}", index_path %></li>  
 	      <li><%= link_to "#{t 'menu.departamentos'}", departamentos_path %></li>
 		  <li><%= link_to "#{t 'menu.servicios'}", servicios_path %></li>
 	      <li><%= link_to "#{t 'menu.ubicacion'}", ubicacion_path %></li>
@@ -55,13 +56,13 @@ Shadowbox.init();
 <div id="footer">
    <div id="menu-footer">
 	<div id="logo-small"></div>	
-	<div id="marca-dire">Av. 11 de septiembre 2170 <br> Apart Hotel © 2010 Urban Suite </div>
+	<div id="marca-dire">Av. 11 de septiembre 2170 <br> Apart Hotel © 2011 Urban Suites </div>
 	<div id="consulta">
 		<%= t 'textos.consultas' %>:<br>
 		<%= t 'textos.horarios' %> 9:00 a 18:00  <br> 
-		<%= t 'textos.fono' %> (56 2) 9357625 <br>
+		<%= t 'textos.fono' %> +56 2 935 7625 <br>
 		<!--<%= t 'textos.celular' %> (56 9) - 88283754 -->
-		contacto@urbansuites.cl
+		<a href="mailto:contacto@urbansuites.cl">contacto@urbansuites.cl</a>
 	</div>	
 	<div id="menuhoriz2">  
 	   <ul>  

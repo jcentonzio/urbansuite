@@ -1,0 +1,136 @@
+"es":
+  menu:
+    inicio: "INICIO"
+    apart_hotel: "APART HOTEL"
+    departamentos: "DEPARTAMENTOS"
+    servicios: "SERVICIOS"
+    ubicacion: "UBICACIÓN"
+    reservas: "RESERVAS"
+    contacto: "CONTACTO"
+  titulos:
+    reserva: "Haz tu Reserva"
+    departamentos: "Departamentos"
+    1dormitorio: "1 Dormitorio"
+    2dormitorios: "2 Dormitorios"
+    titulodepartamento1: "Departamentos con capacidad para 3 personas:"
+    titulodepartamento2: "Departamentos con capacidad para 5 personas:"
+    servicios_adicionales: "Servicios adicionales"
+    servicios: "Servicios"
+    ubicacion: "Ubicación"
+    titulo_reserva: "Reserva"
+    consultas_telefonicas: "Consultas telefónicas"
+    contacto: "Contacto"
+  caracteristicas:
+    cocina: "Cocina completamente equipada"
+    aire: "Aire acondicionado y calefacción"
+    internet: "Conexión a Internet alta velocidad"
+    tabla: "Plancha y tabla de planchar"
+    equipo: "Equipo de música con base para Iphone y Ipod"
+    tv: "Televisión por cable FULL HD "
+    caja: "Caja de seguridad digital"
+    refigerador: "Refrigerador" 
+  servicios:
+    salon_eventos: "Salon de eventos"
+    piscina: "piscina en la azotea con vista panorámica"
+    gym: "gimnacio equipado"
+    aeropuerto: "Vehículo exclusivo de traslado al aeropuerto"
+    tre: "Wifi - Estacionamiento - Desayuno"
+    confortables: "Confortables departamentos de uno y dos dormitorios."
+    cama: "Cama king president."
+    aire: "Aire acondicionado y calefacción."
+    telefonia_internet: "Telefonía local ilimitada, Internet Wi-Fi."
+    tv: "Televisor full HD con TV cable."
+    equipo: "Equipo de música con base de Ipod y Iphone." 
+    mucama: "Servicio de mucama de Lunes a Sábado."
+    lavanderia: "Lavandería para ropa de cama y baño."
+    caja: "Caja de seguridad digital."
+    estacionamiento: "Estacionamiento subterráneo privado."
+    secador: "Secador de pelo."
+    cocina: "Cocinas full equipadas."
+    taxi: "Servicio de taxis acreditados."
+    atencion: "Atención en horario de oficinas de 09:00 a 18:30 hrs."
+    atencion2: "Atención 24/7 teléfono emergencias."           
+  parrafos:
+    parrafo_home: "Enfocados en brindar un alojamiento donde usted sólo se ocupe de sus negocios y descanso. Apart Hotel Urban Suites le brinda lo mejor de sus servicios:"
+    parrafo_departamentos: "Urban Suite ofrece a sus huéspedes modernos y elegantes departamentos de uno y dos dormitorios, con excelentes terminaciones, espacios de máxima comodidad y gran estilo."
+    parrafo_servicios: "En Urban Suites queremos que su estancia sea lo más cómoda posible por lo que ofrecemos los siguientes servicios:"
+    parrafo_ubicacion: "En la esquina más importante de Providencia está Urban Suite, un hito urbano en una ubicación irrepetible, donde encontrarás restaurantes, bancos, supermercados, oficinas, centros comerciales y muchas actividades para el turista en viaje de negocios o de vacaciones. "
+    parrafo_reserva: "Haga su reserva a través del siguiente formulario y un ejecutivo se contactará con usted a la brevedad. "
+    parrafo_contacto: "Responderemos a la brevedad cualquier detalle sobre los departamentos, tarifas, servicios y/o ubicación de apart hotel Urban Suite. "
+    parrafo_contacto2: "Si desea reservar un departamento, haga su reserva"
+    parrafo_traslado: "Servicio propio de traslado al Aeropueto"
+  textos:
+    ubicacion: "Ubicación"
+    direccion: "Dirección"
+    hacer_reserva: "Hacer reserva"
+    ver_video: "Ver video"
+    ver_planta: "Ver planta" 
+    reserva: "Hacer reserva"
+    consultas: "Consultas"
+    horarios: "Horarios de oficina:"
+    celular: "Celular:"
+    fono: "Teléfono:"  
+    aqui: "aquí"     
+  frases:
+    conozca: "Conozca sobre su privilegiado sector"              
+  authlogic:
+    models:
+      user_session:
+    attributes:
+      user_session:
+        login: "Nombre de Usuario"
+        email: email
+        password: password
+        remember_me: remember me
+    error_messages:
+      login_blank: can not be blank
+      login_not_found: is not valid
+      login_invalid: "No es válido"
+      password_blank: can not be blank
+      password_invalid: is not valid
+  activerecord:
+    models:
+      reservation: "Reservación"
+      contact: "Contacto"
+    attributes:
+      reservation:
+        name: "Nombre *"
+        lastname: "Apellido *"
+        rut: "R.U.T"
+        phone: "Teléfono"
+        mail: "Correo *"
+        address: "Dirección"                          
+        city: "Ciudad"
+        country_id: "País"
+        comment: "Comentario"
+        type_room_id: "Tipo de Habitación *"
+        arrived: "Llegada *"
+        output: "Salida *"
+        number_pass: "Nº de pasajeros"
+      contact:
+        name: "Nombre *"
+        lastname: "Apellido *"
+        phone: "Teléfono"
+        mail: "Correo *"                         
+        comment: "Consulta *"
+    
+    labels:
+      reservation:
+        name: "Nombre *"
+        lastname: "Apellido *"
+        rut: "R.U.T"
+        phone: "Teléfono"
+        mail: "Correo *"
+        address: "Dirección"                          
+        city: "Ciudad"
+        country_id: "País"
+        comment: "Comentario"
+        type_room_id: "Tipo de Habitación"
+        arrived: "Llegada *"
+        output: "Salida *"
+      contact:
+        name: "Nombre *"
+        lastname: "Apellido"
+        phone: "Teléfono *"
+        mail: "Correo *"                         
+        comment: "Comentario *"          

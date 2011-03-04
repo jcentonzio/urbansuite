@@ -11,7 +11,7 @@
 <div id="box">
  <h2><%= t 'titulos.reserva' %></h2>
 <div id="form-home">
-	<% form_for @reservation, :remote => true, :url => { :action => :reserva } do |f| %>
+	<% form_for @reservation, :url => { :action => :reserva } do |f| %>
 	  <div class="field">
 	    <%= f.label :name %><br />
 	    <%= f.text_field :name, :class => 'home' %>
@@ -67,10 +67,11 @@ $("#new_reservation").validator();
  <div id="parrafo">
     <%= t 'parrafos.parrafo_home' %>
  </div>
- <div id="img-servicios"></div>
+ <div id="text-servi"><%= t 'servicios.tre' %></div>
+<div id="tras"><%= t 'servicios.aeropuerto' %> </div>
  <a href="/reservas"><div id="icon-map"></div></a>
  <div id="text-ubicacion">
-   <a href="/reservas"><span class="titulo"><%= t 'textos.ubicacion' %></span></a><br>
+   <a href="/reservas"><span class="ubicacion"><%= t 'textos.ubicacion' %></span></a><br>
 	<%= t 'frases.conozca' %>
  </div>
 </div>		

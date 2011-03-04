@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :set_locale
+
   
   def set_locale
     # if params[:locale] is nil then I18n.default_locale will be used
@@ -11,5 +12,6 @@ class ApplicationController < ActionController::Base
     logger.debug "default_url_options is passed options: #{options.inspect}\n"
     { :locale => I18n.locale }
   end
-  
+
+    
 end

@@ -1,8 +1,9 @@
 body{
   background:url("/images/fondo.jpg") 50% 0 transparent;
-  background-color:#000;
-  font-family:Tahoma,trebuchet ms,arial,serif;
-  font-size:13px;
+  background-color:#F5FAFE;
+  font-family: 'Lucida sans',Verdana,Arial,Sans-serif;
+  font-style: italic;
+  font-size: 13px;
   margin:20px 0 0;
   padding:0;	
   color:#333;
@@ -32,6 +33,10 @@ h2{
 	color:#C18A3A;
 }
 
+span.ubicacion{
+	font-size:20px;
+}
+
 #reservation h2{
  color:#C18A3A;
  font-size:17px;
@@ -55,7 +60,7 @@ h2{
 
 label{
 	font-weight:bold;
-	font-size:12px;
+	font-size:15px;
 }
 
 input.home{
@@ -127,7 +132,7 @@ div.field3 label{
 
 span.titulo{
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: normal;
 }
 
@@ -157,20 +162,20 @@ span.titulo-seccion{
 
 #num-texto{
   float:left;
-  font-size:16px;
+  font-size:20px;
   margin:6px 0 0;	
 }
 
 #menuhoriz{
-   float: left;
-   margin: 52px 0 0;
-   width: 683px;
+    float: left;
+    margin: 34px 0 0;
+    width: 683px;
 }
 
 #menuhoriz ul li {  
     border-right: 1px solid #333333;
     display: inline;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: bold;
     margin: 6px;
     padding-right: 26px;
@@ -271,6 +276,7 @@ float:right;
     float: left;
     margin: 84px 0 0;
     width: 787px;
+    font-size:11px;
 }
 
 #menuhoriz2 ul li {  
@@ -319,8 +325,10 @@ float:right;
 }
 
 #addres{
-	float:left;
-	clear:both;
+    clear: both;
+    float: left;
+    font-size: 15px;
+    width: 600px;
 }
 
 #showcase2{
@@ -382,8 +390,8 @@ clear:both;
 }
 
 div.field3, div.actions {
-float: left;
-margin:0 0 0 96px;
+    float: left;
+    margin: 0 0 0 55px;
 }
 
 div.field_c, div.actions {
@@ -455,28 +463,31 @@ clear:both;
 	width:90%;
 	margin:5px auto;
 	color:#000;
+	font-family: arial;
+	font-style:normal;
 }
 
 #img-servicios{
 	width:396px;
 	height:98px;
 	background-image:url("/images/servicios.png");
-	margin:25px auto;
+	margin:20px auto;
 }
 
 #icon-map{
-	float:left;
-	margin:20px 0 0 20px;
-	width:41px;
-	height:42px;
-	background-image:url("/images/icon-map.png");
+    background-image: url("/images/icon-map.png");
+    clear: both;
+    float: left;
+    height: 42px;
+    margin: 38px 0 0 21px;
+    width: 41px;
 }
 
 #text-ubicacion{
-    color: #000;
+    color: #000000;
     float: left;
-    margin: 22px 0 0 5px;
-    font-weight:bold;
+    font-weight: bold;
+    margin: 39px 0 9px 3px;
 }
 
 #form-home{
@@ -506,7 +517,7 @@ clear:both;
 #box-depa #titulo{
     float:left;
     margin:10px 0 0 10px;
-    font-size:17px;
+    font-size:25px;
     color:#fff;
 }
 
@@ -518,11 +529,19 @@ clear:both;
 
 span.titulo2{
 	font-weight:bold;
+	font-size:15px;
 }
 
 ul.caracteristicas{
 	margin: 20px 0 0;
 	padding:0;
+}
+
+ul.caracteristicas li{
+    font-size: 13px;
+    line-height: 23px;
+    font-family: arial;
+	font-style:normal;
 }
 
 #serv{
@@ -545,6 +564,7 @@ ul.caracteristicas{
 #buttons{
     float: left;
     margin: 58px 0 0 10px;
+    font-size:12px;
 }
 
 #buttons #m1{
@@ -562,6 +582,8 @@ ul.caracteristicas{
     margin: 2px 0 0;
     text-indent: 11px;
     width: 892px;
+    font-family: arial;
+	font-style:normal;
 }
 
 #plano{
@@ -666,7 +688,7 @@ div.btn-contacto{
     font-weight: bold;
     padding: 7px;
     position: absolute;
-    right: 20px;
+    right: 5px;
     top: 77px;
 }
 
@@ -708,4 +730,21 @@ div.btn-contacto{
     margin: 39px 0 0;
     padding: 5px;
     text-align: center;	
+}
+
+span.parrafo{
+	font-family: arial;
+	font-style:normal;
+}
+
+#text-servi{
+    float: left;
+    font-size: 25px;
+    margin: 40px 0 0 19px;
+}
+
+#tras{
+    float: left;
+    font-size: 16px;
+    margin: 24px 0 0 21px;
 }

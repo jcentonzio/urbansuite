@@ -1,7 +1,7 @@
 <div id="seccion">
    <div id="seccion-titulo">
 	<span class="titulo-seccion"><%= t 'titulos.departamentos' %></span><br>
-      <%= t 'parrafos.parrafo_departamentos' %>
+     <span class="parrafo"> <%= t 'parrafos.parrafo_departamentos' %></span>
 	</div>	
 </div>
 
@@ -9,7 +9,7 @@
 	<div id="content-seccion2">
 	 
 	<div id="box-depa">
-		<div id="prew"><%= image_tag "/images/1dormitorio/1.jpg", :size => '180x121' %></div>
+		<div id="prew"><%= image_tag "/images/single.jpg", :size => '180x121' %></div>
 		<div id="titulo"><%= t 'titulos.1dormitorio' %></div>
 		<div id="buttons">
 			<div id="m1"><a href="/reservas"><%= t 'textos.hacer_reserva' %></a></div>
@@ -34,7 +34,7 @@
 		</div>			
 	</div>
 	<div id="box-depa">
-		<div id="prew"><%= image_tag "/images/2dormitorio/1.jpg", :size => '180x121' %></div>
+		<div id="prew"><%= image_tag "/images/doble.jpg", :size => '180x121' %></div>
 		<div id="titulo"><%= t 'titulos.2dormitorios' %></div>
 		<div id="buttons">
 			<div id="m1"><a href="/reservas"><%= t 'textos.hacer_reserva' %></a></div>
@@ -71,6 +71,7 @@
         <div id="thumb"><a href="/images/2dormitorio/4.jpg" rel="shadowbox[2dor]"><%= image_tag "/images/thumbs_2/4.jpg" %></a></div>
         <div id="thumb"><a href="/images/2dormitorio/5.jpg" rel="shadowbox[2dor]"><%= image_tag "/images/thumbs_2/5.jpg" %></a></div>
     </div>
-    <div id="otros"><span style="color:#fff;font-size:16px"><%= t 'titulos.servicios_adicionales' %></span> <%= t 'servicios.salon_eventos' %>, <%= t 'servicios.piscina' %>, <%= t 'servicios.gym' %> </div>
+    <div id="otros"><span style="color:#fff;font-size:16px;font-family: 'Lucida sans',Verdana,Arial,Sans-serif;
+  font-style: italic;"><%= t 'titulos.servicios_adicionales' %>:</span> <%= t 'servicios.salon_eventos' %>, <%= t 'servicios.piscina' %>, <%= t 'servicios.gym' %> </div>
     </div>
  </div>
