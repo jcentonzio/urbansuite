@@ -29,4 +29,4 @@ jQuery(function($) {
 	    .bind("ajax:success", function(data, status, xhr) {
 	      $("#response").html(status);
 	    });
-});s
+});

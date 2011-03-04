@@ -29,6 +29,7 @@ Urbansuite::Application.routes.draw do
   root :to => "home#index"
   
   match ":locale" => "home#index", :as => :index
+  #match "/" => "home#index", :as => :index
   match "/servicios/" => "home#servicios", :as => :servicios
   match "/servicios/:locale" => "home#servicios", :as => :servicios
   match "/ubicacion/" => "home#ubicacion", :as => :ubicacion

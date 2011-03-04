@@ -69,7 +69,7 @@ $("#new_reservation").validator();
  </div>
  <div id="text-servi"><%= t 'servicios.tre' %></div>
 <div id="tras"><%= t 'servicios.aeropuerto' %> </div>
- <a href="/reservas"><div id="icon-map"></div></a>
+ <div id="icon-map"><%= link_to image_tag("/images/icon-map.png"), ubicacion_path %></div>
  <div id="text-ubicacion">
    <a href="/reservas"><span class="ubicacion"><%= t 'textos.ubicacion' %></span></a><br>
 	<%= t 'frases.conozca' %>
