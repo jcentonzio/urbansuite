@@ -29,18 +29,11 @@ Urbansuite::Application.routes.draw do
   root :to => "home#index"
   
   match ":locale" => "home#index", :as => :index
-  #match "/" => "home#index", :as => :index
-  match "/servicios/" => "home#servicios", :as => :servicios
   match "/servicios/:locale" => "home#servicios", :as => :servicios
-  match "/ubicacion/" => "home#ubicacion", :as => :ubicacion
   match "/ubicacion/:locale" => "home#ubicacion", :as => :ubicacion
-  match "/reservas/" => "home#reservas", :as => :reservas
   match "/reservas/:locale" => "home#reservas", :as => :reservas
-  match "/contacto/" => "home#contacto", :as => :contacto
   match "/contacto/:locale" => "home#contacto", :as => :contacto
-  match "/departamentos/" => "home#departamentos", :as => :departamentos
   match "/departamentos/:locale" => "home#departamentos", :as => :departamentos
-
   match "reserva/:locale" => "home#reserva", :as => "reserva"
   match "contact/:locale" => "home#contact", :as => "contact"   
 
