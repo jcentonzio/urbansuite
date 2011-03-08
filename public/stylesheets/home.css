@@ -59,7 +59,6 @@ span.ubicacion{
 }
 
 label{
-	font-weight:bold;
 	font-size:15px;
 }
 
@@ -176,7 +175,6 @@ span.titulo-seccion{
     border-right: 1px solid #333333;
     display: inline;
     font-size: 12px;
-    font-weight: bold;
     margin: 6px;
     padding-right: 26px;
 }  
@@ -739,7 +737,7 @@ span.parrafo{
 
 #text-servi{
     float: left;
-    font-size: 25px;
+    font-size: 24px;
     margin: 40px 0 0 19px;
 }
 

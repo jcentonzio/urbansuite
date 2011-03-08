@@ -28,14 +28,14 @@ Urbansuite::Application.routes.draw do
   
   root :to => "home#index"
   
-  match ":locale" => "home#index", :as => :index
-  match "/servicios/:locale" => "home#servicios", :as => :servicios
-  match "/ubicacion/:locale" => "home#ubicacion", :as => :ubicacion
-  match "/reservas/:locale" => "home#reservas", :as => :reservas
-  match "/contacto/:locale" => "home#contacto", :as => :contacto
-  match "/departamentos/:locale" => "home#departamentos", :as => :departamentos
-  match "reserva/:locale" => "home#reserva", :as => "reserva"
-  match "contact/:locale" => "home#contact", :as => "contact"   
+  match "/" => "home#index", :as => :index
+  match "/servicios/" => "home#servicios", :as => :servicios
+  match "/ubicacion/" => "home#ubicacion", :as => :ubicacion
+  match "/reservas/" => "home#reservas", :as => :reservas
+  match "/contacto/" => "home#contacto", :as => :contacto
+  match "/departamentos/" => "home#departamentos", :as => :departamentos
+  match "reserva/" => "home#reserva", :as => "reserva"
+  match "contact/" => "home#contact", :as => "contact"   
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
