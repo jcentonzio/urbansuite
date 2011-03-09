@@ -3,18 +3,12 @@
 <head>
   <title>Urban Suites - Apart hotel en Santiago de Chile - Hotel of Chile - Santiago Chile lodging</title>
   <%= stylesheet_link_tag :all %> 
-  <%= javascript_include_tag :defaults, 'jquery.tools.min', 'jquery.showcase-2.0.2.min', 'shadowbox' %>
+  <%= javascript_include_tag :defaults, 'jquery.tools.min', 'shadowbox' %>
   <%= csrf_meta_tag %>
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><meta name="description" content="Urban Suites Apart Hotel en Santiago de Chile, excelente ubicación en pleno corazón de Providencia, elegantes departamentos de uno y dos dormitorios, con excelentes terminaciones, espacios de máxima comodidad y gran estilo." />
 <meta name="keywords" content="Apart hotel, apart hotel en santiago, apart hotel providencia, hoteles en santiago, hotel en santiago, hoteles de santiago, hoteles en chile, hotel chile, hotel en santiago de chile, santigo de chile hoteles, apart hoteles
 hotel apart hotel, departamentos en arriendo en santiago, departamentos amoblados en santiago, arriendo de departamentos en santiago, departamentos amoblados, hoteles en santiago chile , hotel providencia, santiago apart hotel, alojamiento en santiago, suites en santiago, alojamientos en santiago, hotel of chile, santiago de chile hoteles, santiago chile lodging, apartments in chile, breakfast in chile, Holidays in chile, hotels viña del mar" />
   <meta name="google-site-verification" content="y8H0bXEEVSVouY1hnn7XO_Qp7_3hdOXQzfkVLep96U4" />
-  <script type="text/javascript">
-      $(function () { 
-          $("#showcase3").showcase();
-         
-      });
-  </script>
 
 <script type="text/javascript">
 Shadowbox.init();
@@ -26,8 +20,8 @@ Shadowbox.init();
 <body>
 <div id="head">
 	<div id="llamar">		
-	    <span class="titulo"><%= t 'textos.reserva' %>!</span> <a href="es"><%= image_tag "/images/spanish.png" %></a>
-	 <a href="en"><%= image_tag "/images/english.png" %></a> <br>
+	    <span class="titulo"><%= t 'textos.reserva' %>!</span> <a href="/"><%= image_tag "/images/spanish.png" %></a>
+	 <a href="http://www.urbansuites.cl/english"><%= image_tag "/images/english.png" %></a> <br>
 	    <div id="icon-fono"></div>
 	    <div id="num-texto"> +56 2 935 7625 </div>
 		<div id="addres">

@@ -42,10 +42,11 @@
 			  <div class="btn-contacto">
 			    <%= f.submit 'Enviar', :class => 'button' %>
 			  </div>
+			<div id="loading-c" style="display:none;"><%= image_tag "/images/ajax-loader.gif"%></div>
 			<% end %>
 			<div id="consultas-t">
 				<%= t 'titulos.consultas_telefonicas' %>:<br>
-				<%= t 'textos.horarios' %> 9:00 a 18:00<br>
+				<%= t 'textos.horarios' %> 24hrs<br>
 				<%= t 'textos.fono' %> +56 2 935 7625 <br>
 				<!--<%= t 'textos.celular' %> (56 9) - 78977444-->
 			</div>

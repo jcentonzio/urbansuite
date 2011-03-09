@@ -623,6 +623,7 @@ ul.caracteristicas li{
 #form-contacto{
 	margin:8px auto;
 	width:90%;
+	position:relative;
 }
 
 div.btn-contacto{
@@ -738,11 +739,19 @@ span.parrafo{
 #text-servi{
     float: left;
     font-size: 24px;
-    margin: 40px 0 0 19px;
+    margin: 46px 0 0 0;
+    text-align: center;
+    width: 100%;
 }
 
 #tras{
     float: left;
     font-size: 16px;
     margin: 24px 0 0 21px;
+}
+
+#loading-c{
+    left: 83px;
+    position: absolute;
+    top: 355px;
 }

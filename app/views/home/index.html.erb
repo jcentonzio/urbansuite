@@ -1,17 +1,18 @@
 <div id="anima">
 <div id="showcase3">
-	<a><img src="images/home/1.jpg"  /></a>
-    <a><img src="images/home/2.jpg" /></a>
-    <a><img src="images/home/3.jpg" /></a>
-    <a><img src="images/home/4.jpg" /></a>
-    <a><img src="images/home/5.jpg" /></a>
+	<a><img src="images/home/1.jpg" width="880" height="306" alt="Apart Hotel Urban Suites posee piscina en la azotea con espectacular vista panorámica de Santiago de Chile"/></a>
+    <a><img src="images/home/2.jpg" width="880" height="306" alt="Salon de reuniones para sus clientes"/></a>
+    <a><img src="images/home/3.jpg" width="880" height="306" alt="Apart Hotel Urban Suites tiene Gimnasio totalmente equipado"/></a>
+    <a><img src="images/home/4.jpg" width="880" height="306" alt="Apart Hotel Urban Suites tiene una previlegiada ubicación en el corazon de Providencia, Santiago de Chile"/></a>
 </div>
 </div>
 
 <div id="box">
  <h2><%= t 'titulos.reserva' %></h2>
 <div id="form-home">
-	<% form_for @reservation, :url => { :action => "reserva" } do |f| %>
+	<% form_for @reservation, :url => { :action => "reserva" }, :remote => true do |f| %>
+
+	
 	  <div class="field">
 	    <%= f.label :name %><br />
 	    <%= f.text_field :name, :class => 'home' %>
@@ -52,16 +53,15 @@
 	    <%= f.submit 'Enviar', :class => 'button' %>
 	  </div>
 	<% end %>
+	<div id="msn">
+	<div id="loading" style="display:none;"><%= image_tag "/images/ajax-loader.gif"%></div>
+	</div>
+	
 	<script>
 	$(":date").dateinput();
 	</script>
   </div>
 </div>
-
-<script>
-$("#new_reservation").validator();
-</script>
-
 
 <div id="box">
  <div id="parrafo">

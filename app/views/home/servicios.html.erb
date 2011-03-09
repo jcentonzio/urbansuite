@@ -34,59 +34,14 @@
     
     <div id="imagen-servicios">
 	<div id="imagenes">
-        <img src="/images/servicios/1.jpg" />
-        <img src="/images/servicios/2.jpg" />
-        <img src="/images/servicios/3.jpg" />
-        <img src="/images/servicios/4.jpg" />
-        <img src="/images/servicios/5.jpg" />
+        <img src="/images/servicios/1.jpg" alt="Apart hotel con piscina" />
+        <img src="/images/servicios/2.jpg" alt="Aparthotel en Santiago"/>
+        <img src="/images/servicios/3.jpg" alt="Apart hotel en Providencia"/>
+        <img src="/images/servicios/4.jpg" alt="Apart hotel en Chile"/>
+        <img src="/images/servicios/5.jpg" alt="Hotel en Santiago"/>
     </div>
     </div>
     </div>
  </div>
 
-<div id="reservation" class="overlay" style="display:none">
- <h2>Haz tu Reserva</h2>
-<div id="form-home">
-	<%= form_for(@reservation) do |f| %>
-	  <div class="field2">
-	    <%= f.label :name %><br />
-	    <%= f.text_field :name, :class => "home" %>
-	  </div>
-	  <div class="field">
-	    <%= f.label :arrived  %><br />
-	    <%= f.text_field :arrived, :type =>'date' %>
-	  </div>
-	  <div class="field">
-	    <%= f.label :output %><br />
-	    <%= f.text_field :output, :type =>'date' %>
-	  </div>
-	  <div class="field">
-	    <%= f.label :number_pass %><br />
-	    <%= f.text_field :number_pass, :class => "number" %>
-	  </div>
-	 <div class="field3">
-		<%= f.label "Dormitorios" %><br />
-		<div id="button">
-	     <% TypeRoom.all.each do |type_room| %>
-	        <%= radio_button_tag type_room.id, type_room.name, :html => {:class =>"radio"} %> <%= type_room.name %>
-	     <% end %>
-	    </div>
-	 </div>
-	  <div class="field">
-	    <%= f.label :phone %><br />
-	    <%= f.text_field :phone, :class => "home" %>
-	  </div>
-	  <div class="field">
-	    <%= f.label :mail %><br />
-	    <%= f.text_field :mail, :class => "home" %>
-	  </div>
-	  <div class="field">
-	    <%= f.submit 'Enviar', :class => 'button' %>
-	  </div>
-	<% end %>
-	<script>
-	$(":date").dateinput();
-	$("img[rel]").overlay();
-	</script>
-  </div>
 </div>

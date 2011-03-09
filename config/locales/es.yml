@@ -8,7 +8,7 @@
     reservas: "RESERVAS"
     contacto: "CONTACTO"
   titulos:
-    reserva: "Haz tu Reserva"
+    reserva: "Haz tu Reserva en Apart Hotel Urban Suites"
     departamentos: "Departamentos"
     1dormitorio: "1 Dormitorio"
     2dormitorios: "2 Dormitorios"
@@ -47,7 +47,7 @@
     estacionamiento: "Estacionamiento subterráneo privado."
     secador: "Secador de pelo."
     cocina: "Cocinas full equipadas."
-    taxi: "Servicio de taxis acreditados."
+    taxi: "Vehículo exclusivo de traslado al aeropuerto"
     atencion: "Atención en horario de oficinas de 09:00 a 18:30 hrs."
     atencion2: "Atención 24/7 teléfono emergencias."           
   parrafos:

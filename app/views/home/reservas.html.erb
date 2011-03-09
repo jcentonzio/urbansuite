@@ -49,6 +49,7 @@
 			  <div class="field">
 			    <%= f.submit 'Enviar', :class => 'button' %>
 			  </div>
+			<div id="loading" style="display:none;"><%= image_tag "/images/ajax-loader.gif"%></div>
 			<% end %>
 			<script>
 			$(":date").dateinput();
@@ -57,7 +58,7 @@
 		<div id="consultas-r">
 	    	<span style="font-size:14px;"><%= t 'titulos.consultas_telefonicas' %>:</span><br><br>
 
-			<%= t 'textos.horarios' %> 9:00 a 18:00<br>
+			<%= t 'textos.horarios' %> 24hrs<br>
             <%= t 'textos.fono' %> +56 2 935 7625 <br>
 			<!--<%= t 'textos.celular' %> (56 9) - 78977444<br><br>-->
 			<a href="mailto:contacto@urbansuites.cl">contacto@urbansuite.cl</a>
