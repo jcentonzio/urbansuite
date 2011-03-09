@@ -1,4 +1,4 @@
-"en-us":
+"en":
   menu:
     inicio: "HOME"
     apart_hotel: "APART HOTEL"
@@ -33,6 +33,8 @@
     salon_eventos: "Multi purpose room that can be adapted for events as celebrations, meetings etc."
     piscina: "Rooftop pool with panoramic views of the city"
     gym: "Gym equipped with weights and cardio room and Laundry room."
+    aeropuerto: "Exclusive car transfer to airport"
+    tre: "Wifi - Parking - Breakfast"
     confortables: "Comfortable apartments with one or two bedrooms"
     cama: "Bed King president"
     aire: "Air Conditioner and heating system"
@@ -65,7 +67,7 @@
     ver_planta: "See plant"
     reserva: "Reservations"
     consultas: "Questions"
-    horarios: "Office Hours:"
+    horarios: "Opening hours"
     celular: "Cell:"
     fono: "Phone:"
     aqui: "here"
