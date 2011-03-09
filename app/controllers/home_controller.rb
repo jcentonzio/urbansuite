@@ -17,7 +17,7 @@ class HomeController < ApplicationController
   def servicios
     @reservation = Reservation.new
     @titulo = "Apart Hotel Urban Suites ofrece el mejor servicio a sus clientes."
-    @titulo = "Urban Suites disponemos de estacionamiento, wifi, desayuno, lavandería, piscina en azotea, gimnasio, vehículo propio para el traslado de pasajeros, etc"
+    @descripcion = "Urban Suites disponemos de estacionamiento, wifi, desayuno, lavandería, piscina en azotea, gimnasio, vehículo propio para el traslado de pasajeros, etc"
     render :layout => 'seccion'
   end
   
