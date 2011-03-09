@@ -35,7 +35,9 @@ Urbansuite::Application.routes.draw do
   match "/contacto/" => "home#contacto", :as => :contacto
   match "/departamentos/" => "home#departamentos", :as => :departamentos
   match "reserva/" => "home#reserva", :as => "reserva"
-  match "contact/" => "home#contact", :as => "contact"   
+  match "contact/" => "home#contact", :as => "contact"  
+  
+  match 'sitemap' => 'sitemaps#sitemap' 
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
