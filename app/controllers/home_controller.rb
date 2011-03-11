@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    I18n.default_locale = :es
     @type_rooms = TypeRoom.all
     @countries = Country.all
     @reservation = Reservation.new
@@ -8,6 +9,7 @@ class HomeController < ApplicationController
   end
     
   def departamentos
+    I18n.default_locale = :es
     @reservation = Reservation.new
     @titulo = "Premium Apart Hotel Urban Suites - Departamentos de uno y dos dormitorios"
     @descripcion = "En Urban Suites tenemos modernos y comodos departamentos de uno y dos dormitorios completamente equipados con wifi, tv cable, aire acondicionado, etc."
@@ -15,6 +17,7 @@ class HomeController < ApplicationController
   end
   
   def servicios
+    I18n.default_locale = :es
     @reservation = Reservation.new
     @titulo = "Apart Hotel Urban Suites ofrece el mejor servicio a sus clientes."
     @descripcion = "Urban Suites disponemos de estacionamiento, wifi, desayuno, lavandería, piscina en azotea, gimnasio, vehículo propio para el traslado de pasajeros, etc"
@@ -22,12 +25,14 @@ class HomeController < ApplicationController
   end
   
   def ubicacion
+    I18n.default_locale = :es
     @titulo = "Apart Hotel Urban Suites ubicado en Providencia con Ricardo Lyon en Santiago de Chile"
     @descripcion = "Nos encontramos en una privilegiada ubicación en pleno corazón de Providencia, a un paso del metro, restaurantes, bancos, supermercados, etc. Conózcanos ..."
     render :layout => 'seccion'
   end
   
   def reservas
+    I18n.default_locale = :es
     @reservation = Reservation.new
     @type_rooms = TypeRoom.all
     @countries = Country.all
@@ -37,6 +42,7 @@ class HomeController < ApplicationController
   end 
   
   def contacto
+    I18n.default_locale = :es
     @contact = Contact.new
     @titulo = "Contacto con Apart Hotel Urban Suites"
     @descripcion = "Contáctese con nosotros te responderemos a la brevedad."
