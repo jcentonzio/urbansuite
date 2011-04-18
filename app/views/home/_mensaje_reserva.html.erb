@@ -2,27 +2,27 @@
 <div id="mensaje-error">Por favor completa los campos marcados</div>
 <% form_for @reservation, :remote => true, :url => { :action => :reserva } do |f| %>
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name, :class => 'home' %>
   </div>
   <div class="field">
-    <%= f.label :lastname %><br />
+    <%= f.label :lastname %>
     <%= f.text_field :lastname, :class => 'home' %>
   </div>
   <div class="field">
-    <%= f.label :arrived  %><br />
+    <%= f.label :arrived  %>
     <%= f.text_field :output, :type =>'date' %>
   </div>
   <div class="field">
-    <%= f.label :output %><br />
+    <%= f.label :output %>
     <%= f.text_field :output, :type =>'date' %>
   </div>
   <div class="field">
-    <%= f.label :number_pass %><br />
+    <%= f.label :number_pass %>
     <%= f.text_field :number_pass, :class => "number" %>
   </div>
  <div class="field3">
-	<%= f.label :dormitorios %><br />
+	<%= f.label :dormitorios %>
 	<div id="button">
      <% TypeRoom.all.each do |type_room| %>
         <%= radio_button_tag "reservation[type_room_id]", type_room.id, :html => {:class =>"radio"} %> <%= type_room.name %>
